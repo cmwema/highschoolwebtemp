@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(-6109346058506186080_121.jpg);
+
+    background-size: cover;
+    background-position: center;
+    
+
+    font-family: fantasy;
+
+}
+
+.navbar{
+    background-color: green;
+    text-align: center; 
+
+    position: fixed;
+
+    width: 100%;
+}
+
+.navbar ul{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+
+.navbar ul li{
+    width: 120px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+active, .navbar ul li:hover{
+    background-color: rgb(97, 212, 97);
+    border-radius: 3px;
+}
+
+
+/* submenus */
+
+.sub-menu-1{
+    display: none;
+}
+
+
+.navbar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background-color:green;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.navbar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+
+}
+
+
+.navbar ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding:  10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.navbar ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+
+
+
+.navbar ul li:hover .sub-menu-1 ul li a:hover{
+    color: aquamarine;
+
+}
+
+.sub-menu-2{
+    display: none;
+}
+
+.hover-me:hover .sub-menu-2{
+    
+    display: block;
+    position: absolute;
+    background-color:green;
+    margin-top: 15px;
+    margin-left: -15px;
+
+
+}
