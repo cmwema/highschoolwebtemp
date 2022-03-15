@@ -1,5 +1,33 @@
 *{
     background-color: antiquewhite;
-    font: 200;
+    /*font: 200;*/
     
 }
+.top-row{
+    background-color: burlywood;
+    
+}
+.nav{
+    display: inline-block;
+    text-decoration-style: none;
+    
+    text-align: center;
+    display: flex end;
+    margin-left: 300px;
+
+    border: 2px solid rgba(45, 55, 55, 0.1);
+    border-radius: 10px;
+
+}
+.nav ul{
+    list-style: none;
+    display: flex;
+
+}
+
+.nav ul li{
+    /*margin: 10px;*/
+    padding: 10px;
+    margin-left: 10px;
+}
+
