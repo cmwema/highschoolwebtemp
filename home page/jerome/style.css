@@ -1,0 +1,116 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+body {
+  background: #dedede;
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  background-color:#002e5b; 
+  text-align:center;
+  padding:40px 20px; 
+  height: 15vh;
+}
+
+#logo {
+  width: 100px;
+  cursor: pointer;
+  float:left;
+  padding: 15px 15px; 
+  margin-left:10%; 
+}
+header h1{
+  margin:0px;
+  font-size:26px; 
+  color:#D5D5E2; 
+  font-weight:1000;
+  font-family: 'Acme', sans-serif;
+}
+header h3: {
+  font-weight: 400;
+}
+
+h1 span{
+  font-weight:400;
+}
+#container {
+  margin: 0 auto;
+  position:sticky;
+  position:-webkit-sticky;
+  top:0px;
+  width:100%; 
+  margin-bottom:15px;
+  background-color:#09689E; 
+  padding: 0px; 
+  display:inline-block; 
+  transition: all 0.5s ease 0s;
+  align-items: stretch;
+}
+/*.sticky-section{
+  overflow:hidden;
+  background-color:#09689E; 
+  margin-bottom:25px;
+  width:100%; 
+  color:white; 
+  position:sticky;
+  position:-webkit-sticky;
+  top:0px;
+}*/
+
+nav {
+  margin: 50px 0;
+}
+nav ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  position: relative;
+} 
+nav ul li {
+  display:inline-block;
+  background-color: #09689E;
+}
+nav a {
+  display:block;
+  padding:0 10px; 
+  color:#FFF;
+  font-size:20px;
+  line-height: 60px;
+  text-decoration:none;
+}
+nav a:hover { 
+  background-color: #002e5b; 
+}
+
+nav ul ul {
+  display: none;
+  position: absolute; 
+  top: 60px; /* the height of the main nav */
+}
+nav ul li:hover > ul {
+  display:inherit;
+}
+nav ul ul li {
+  width:170px;
+  float:none;
+  display:list-item;
+  position: relative;
+}
+
+/* Second, Third and more Tiers */
+nav  ul ul ul li {
+  position: relative;
+  top:-60px; 
+  left:170px;
+}
+​
+  
+/* Change this in order to change the Dropdown symbol */
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
+
+
+
+
+
