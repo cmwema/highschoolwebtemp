@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-body{
+main{
     background-image: url(-6109346058506186080_121.jpg);
 
     background-size: cover;
@@ -102,4 +102,95 @@ active, .navbar ul li:hover{
     margin-left: -15px;
 
 
+}
+
+
+/* 
+footer */
+*{
+    padding: 0px;
+    margin: 0px;
+
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-wrap{
+    width: 100%;
+    background: #ffff;
+}
+
+.footer-wrap{
+    position: relative;
+    margin-top: 310px; /*edit when fiting into the project*/
+
+    width: 100%;
+    padding: 40px;
+
+    background:rgb(30, 20, 10);
+}
+
+.footer-wrap-1{
+    display: flex;
+}
+
+.footer-section{
+    width: 22%;
+    display: block;
+    padding: 10px 35px;
+
+}
+
+.footer-section:last-of-type{
+    width: 34%;
+}
+
+
+.footer-section h1{
+    font-size: 22px;
+    color: #ffff;
+    margin-bottom: 8px;
+
+}
+
+.footer-section a{
+    color: #ffff;
+
+    display: block;
+    text-decoration: none;
+    padding: 4px 0;
+}
+
+form{
+    position: relative;
+}
+
+form input{
+    position: absolute;
+    height: 35px;
+    width: 220px;
+    margin: 8px 0px;
+    border: none;
+    outline: none;
+    padding: 6px;
+    font-size: 14px;
+}
+
+form .btn{
+    height: 35px;
+    background: rgb(79, 156, 69);
+
+    border: none;
+    padding: 0px 6px;
+    margin: 8px 0px;
+    position: absolute;
+    left: 60%;
+    font-weight: 600;
+    cursor: pointer;
+    color: #ffff;
+}
+
+
+.btn:hover{
+    background: rgb(107, 204, 94);
 }
