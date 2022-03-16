@@ -3,66 +3,58 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="marq.css">
-	<!-- social media icons library starts -->
-	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	    <link rel="stylesheet" type="text/css" href="footer.css">
-    <!-- social media icons library starts ends -->
-
-    <!-- links for loading gifs and web icon starts-->
-	    <link rel="stylesheet" type="text/css" href="loader.css">
-		<script src="jquery-3.6.0.min.js"></script>
-		 <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <!-- links for loading gifs and web icon ends--> 
-    <!-- css for card contents starts-->
-    	<link rel="stylesheet" type="text/css" href="card.css">
-    <!-- css for card contents starts-->
-    <!-- css for slider starts -->
-    	<link rel="stylesheet" type="text/css" href="slide.css">
-    <!-- css for slider starts -->
-
 	<title>Home page</title>
+
+	<!-- online links starts -->
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- online links ends -->
+
+	<!-- offline components/resource links starts -->
+		<link rel="stylesheet" type="text/css" href="marq.css">
+		<link rel="stylesheet" type="text/css" href="footer.css">
+		<link rel="stylesheet" type="text/css" href="loader.css">
+		<script src="jquery-3.6.0.min.js"></script>
+		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="card.css">
+		<link rel="stylesheet" type="text/css" href="slide.css">
+	<!-- offline components/resource links ends -->
 </head>
 <body>
 	<!-- loader icon starts -->
     <div class="loader"></div>
     <!-- loader icon ends -->
-	<!-- <header>
-		<div><img src="images/logo1.png" id="logo"></div> 
-	    <h1><span>BOOKER </span>ACADEMY</h1>
-	    <h3 style="color: maroon;">EDUCATION FOR LIFE</h3>
-	 </header> -->
-	<div class="sticky-section" id="container">
-		<div class="marquee">
-	  		<div>Welcome to our our highschool.The foundation of knowledge</div>
-		</div>
+    <div class="marquee">
+	  	<div>Welcome to our our highschool.The foundation of knowledge</div>
+	</div>
+	<div id="container">
+		<img src="images/logo1.png" id="logo">
 		<nav>
 		 	<ul>
-		 		<li><a href='#Contact Us'>Home</a></li>
-			  	<li><a href='#News & Events'>About Us</a>
-			  		<ul>
+		 		<li><a href='#Home'>Home</a></li>
+			  	<li><a href='#About us'>About Us</a>
+			  		<ul class="dropdown-content">
 			  			<li><a href="#">Who We Are</a></li>
 			  			<li><a href="#">From the Principal</a></li>
 			  			<li><a href="#">History</a></li>
 			  			<li><a href="#">Resources</a></li>
 			  		</ul>
 			  	</li>
-			  	<li><a href="#CSS">Administration</a>
-			   	<ul>
+			  	<li><a href="#Administration">Administration</a>
+			   	<ul class="dropdown-content">
 				   	<li><a href="#">Staff</a></li>
 				   	<li><a href="#">Students</a></li>
 				   	<li><a href="#">Non Staff</a></li>
 			   </ul>
 			   </li>
 			   <li><a href='#Academics'>Academics</a>
-			  		<ul>
+			  		<ul class="dropdown-content">
 				    	<li><a href="#">Information</a></li>
 				    	<li><a href="#">Admissions</a></li>
 				    	<li><a href="#">Departments</a>
-						    <ul>
+						    <ul class="dropdown-content">
 					    		<li><a href="#">Mathematics</a></li>
 					    		<li><a href="#">Languages</a></li>
 					    		<li><a href="#">Sciences</a></li>
@@ -73,7 +65,7 @@
 			    	</ul>
 			  	</li>
 			  	<li><a href="#">CO-Curriculum</a>
-			  		<ul>
+			  		<ul class="dropdown-content">
 			  			<li><a href="#">SPORTS</a></li>
 			  			<li><a href="#">Clubs & Societies</a></li>
 			  		</ul>
@@ -81,11 +73,9 @@
 			  	<li><a href="#">Alumnis</a></li>
 			  	<li><a href="#">News & Events</a></li>
 			  	<li><a href="#">Contact Us</a></li>
-
-			   
-			  
-		 	</ul>
+			</ul>
 		</nav>
+		<img src="" alt="menu-icon" class="menu-icon">
 	</div>
 	<main>
 		<!-- main content starts -->
