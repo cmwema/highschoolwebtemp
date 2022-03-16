@@ -1,12 +1,10 @@
-* {
+.main-content-container{
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
-}
-body {
 	background: rgb(27, 27, 27);
 }
-.container {
+.card-container {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
@@ -25,13 +23,13 @@ body {
 }
 
 .car-1 {
-	background-image: url("C:/Users/quing/Desktop/new/temp/card/images/school.jpg");
+	background-image: url("images/school.jpg");
 }
 .car-2 {
-	background-image: url(C:/Users/quing/Desktop/new/temp/card/images/principal.jpg);
+	background-image: url(images/principal.jpg);
 }
 .car-3 {
-	background-image: url("C:/Users/quing/Desktop/new/temp/card/images/mission.jpg");
+	background-image: url("images/mission.jpg");
 }
 
 .card h2 {
@@ -41,7 +39,7 @@ body {
 	padding: 10px;
 }
 
-.card a {
+.card a{
 	background-color: black;
 	color: white;
 	padding: 15px 20px;
@@ -51,6 +49,10 @@ body {
 	text-decoration: none;
 }
 
+.card a:hover{
+	transform: scale(1.06);
+	color: blue;
+}
 .card:hover {
 	background-color: rgb(62, 62, 62);
 	color: white;
