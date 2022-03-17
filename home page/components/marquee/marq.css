@@ -1,0 +1,32 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+.marq-container {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.marquee {
+  width: 100%;
+  background: #011928;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #D5D5E2;
+}
+
+.marquee div {
+  font-size: 20px;
+  font-family: 'Acme', sans-serif;
+  padding-left: 100%;
+  display: inline-block;
+  animation: animate 50s linear infinite;
+}
+
+@keyframes animate {
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
