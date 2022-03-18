@@ -1,13 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url(https://fonts.googleapis.com/css?family=Bree+Serif);
-.marq-container {
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
 
 .marquee {
+  position: sticky;
+  top: 0px;
   width: 100%;
   background: #011928;
   text-transform: uppercase;
