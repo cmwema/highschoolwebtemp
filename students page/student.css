@@ -44,13 +44,14 @@
 }
 
 .table {
-    justify-content: center;
+    justify-self: center;
+    width: 100%;
 }
 
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 100px;
+    width: 80%;
 }
 
 td,
