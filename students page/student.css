@@ -1,3 +1,9 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
 .wrapper {
     display: grid;
     grid-template-columns: 1fr;
@@ -44,8 +50,7 @@
 }
 
 .table {
-    justify-self: center;
-    width: 100%;
+    justify-content: center;
 }
 
 table {
