@@ -3,15 +3,81 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Students</title>
     <link rel="stylesheet" href="student.css" />
+    <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="loader.css" />
+    <script src="jquery-3.6.0.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 
 <body>
+    <!-- loader icon starts -->
+    <div class="loader"></div>
+    <!-- loader icon ends -->
+    <div id="container">
+        <img src="images/logo1.png" id="logo" alt="logo" />
+        <nav>
+            <!--menu icon-->
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkbtn">
+          <i class="fa fa-bars"> </i>
+        </label>
+            <!--end of menu icon-->
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li>
+                    <a href="#About us">About Us</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Who We Are</a></li>
+                        <li><a href="#">From the Principal</a></li>
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">Resources</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#Administration">Administration</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Staff</a></li>
+                        <li><a href="#">Students</a></li>
+                        <li><a href="#">Non Staff</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#Academics">Academics</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Information</a></li>
+                        <li><a href="#">Admissions</a></li>
+                        <li>
+                            <a href="#">Departments</a>
+                            <ul class="dropdown-content">
+                                <li><a href="#">Mathematics</a></li>
+                                <li><a href="#">Languages</a></li>
+                                <li><a href="#">Sciences</a></li>
+                                <li><a href="#">Humanities</a></li>
+                                <li><a href="#">Technicals</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">CO-Curriculum</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">SPORTS</a></li>
+                        <li><a href="#">Clubs & Societies</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Alumnis</a></li>
+                <li><a href="#">News & Events</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
     <div class="wrapper">
-        <div class="header">HEADER</div>
         <div class="msgs nested">
             MESSAGES
             <div class="box1">
@@ -69,8 +135,76 @@
             </table>
         </div>
         <div class="hIghlights">HIGHLIGHTS</div>
-        <div class="footer">FOOTER</div>
     </div>
+    <footer>
+        <div class="footer-container">
+            <div class="main-wrap">
+                <div class="footer-wrap">
+                    <div class="subscribe">
+                        <h1>Stay connected</h1>
+                        <p>Subscribe to our news letter to receive latest news</p>
+                        <form action="">
+                            <input type="email" name="email" id="email" placeholder="Enter email address" />
+                            <button type="submit" class="btn">Subscribe</button>
+                        </form>
+                    </div>
+
+                    <hr />
+                    <div class="footer-wrap-1">
+                        <div class="footer-section">
+                            <h1>About</h1>
+                            <a href="#">who we are</a>
+                            <a href="#">History</a>
+                            <a href="#">Principal's message</a>
+                            <a href="#"> school Resources</a>
+                        </div>
+
+                        <div class="footer-section">
+                            <h1>Quick links</h1>
+                            <a href="#">Admin</a>
+                            <a href="#">Academics</a>
+                            <a href="#">Alumni</a>
+                            <a href="#">News and Events</a>
+                            <a href="#">Co-curriculum</a>
+                            <a href="#">Contact Us</a>
+                        </div>
+
+                        <div class="footer-section">
+                            <h1>Gallery</h1>
+                            <div class="img-row">
+                                <div class="img-col">
+                                    <a href="#"><img src="images/img-placeholders/-6109482870394433255_121.jpg" alt="" class="mini-gallery" />
+                                    </a>
+                                    <a href="#"><img src="images/img-placeholders/-6141196187353591254_121.jpg" alt="" class="mini-gallery" /></a>
+                                </div>
+                                <div class="img-col">
+                                    <a href="#"><img src="images/img-placeholders/-6107094258692500879_121.jpg" alt="img 1" class="mini-gallery" /></a>
+                                    <a href="#"><img src="images/img-placeholders/-6111734670208118183_121.jpg" alt="img 2" class="mini-gallery" /></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="footer-section" id="social-media">
+                            <h1>Social media</h1>
+                            <a href="#" class="fa fa-facebook"> facebook</a>
+                            <a href="#" class="fa fa-twitter"> twitter</a>
+                            <a href="#" class="fa fa-instagram"> instagram</a>
+                            <a href="#" class="fa fa-linkedin"> linked in</a>
+                        </div>
+                        <div class="footer-section">
+                            <h1>F A Q s</h1>
+                            <h4><a href="#">where are you located</a></h4>
+                            <h4><a href="#">How can i get Admission</a></h4>
+                            <h4><a href="#">How are your past performances</a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer section ends -->
+    <script type="text/javascript" src="loader.js"></script>
+    <!-- link to loader js file -->
 </body>
 
 </html>
