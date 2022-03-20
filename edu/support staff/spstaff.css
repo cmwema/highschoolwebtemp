@@ -9,6 +9,10 @@
 	background: #eee;
 	padding: 1em;
 }
+.spstaff-container h3{
+	text-align: center;
+	font-family: 'courier', sans-serif;
+}
 .spstaff-container > .summary{
 	grid-column: 1;
 }
@@ -19,7 +23,6 @@
 .spstaff-container > .table{
 	grid-column: 1/span end;
 	grid-row: 3/span 2;
-	text-align: center;
 }
 .spstaff-container > .highlights{
 	grid-column: 1/span end;
