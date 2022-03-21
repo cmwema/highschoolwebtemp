@@ -2,7 +2,6 @@ section {
     margin: 0;
     padding: 0;
     background: #dedede;
-    ;
 }
 
 h2 {
@@ -20,12 +19,12 @@ h2 {
 }
 
 .wrapper>div {
-    background: #09689E;
+    background: #09689e;
     padding: 1em;
 }
 
 .wrapper>div:nth-child(odd) {
-    background: #09689E;
+    background: #09689e;
 }
 
 .nested {
@@ -77,6 +76,16 @@ h2 {
     justify-items: center;
 }
 
+.box-6 {
+    display: grid;
+    justify-content: center;
+}
+
+.box-6 img {
+    width: 100%;
+    height: 75%;
+}
+
 .active:hover {
     background-color: transparent;
     color: white;
@@ -110,7 +119,7 @@ h4 {
 }
 
 .wrapper-1>div:nth-child(odd) {
-    background: #09689E;
+    background: #09689e;
 }
 
 .nested-1 {
@@ -149,4 +158,32 @@ h4 {
 .read-more a {
     text-decoration: none;
     color: #fff;
+}
+
+.box-6 a {
+    align-items: center;
+    text-decoration: none;
+}
+
+button {
+    background-color: orange;
+    color: green;
+    display: flex;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    width: 75%;
+    height: 40px;
+    align-items: center;
+    font-weight: 1000;
+}
+
+button:hover {
+    transform: scale(1.05s);
+    transition: all ease 2s;
+    background-color: aqua;
+    color: wheat;
+    border: transparent;
+    border-radius: 10px;
 }
