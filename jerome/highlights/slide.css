@@ -1,0 +1,25 @@
+#homepage-slider{
+	width: 100%;
+}
+#homepage-slider .slider-hero .card{
+	width: 250px;
+	height: 250px;
+	cursor: pointer;
+	border-radius: 10px;
+	margin: 0 5px;
+	text-align: center;
+	background: #0b0440;
+	color: #edc8c5;
+}
+#homepage-slider .slider-hero .card p{
+	position: relative;
+	top: 20%;
+}
+#homepage-slider .slider-hero .card:hover{
+	background: rgba(11, 4, 64, 0.8);
+}
+.box2 h3{
+	font-size: 1em;
+	font-family: 'courier', sans-serif;
+	font-weight: 900;
+}
