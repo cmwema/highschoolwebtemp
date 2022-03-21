@@ -8,7 +8,9 @@
     <title>Students</title>
     <link rel="stylesheet" href="student.css" />
     <link rel="stylesheet" href="nav.css" />
-    <link rel="stylesheet" href="slider.css" />
+    <link rel="stylesheet" type="text/css" href="slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="slide3.css" />
     <link rel="stylesheet" href="footer.css" />
     <link rel="stylesheet" href="loader.css" />
     <script src="jquery-3.6.0.min.js"></script>
@@ -105,49 +107,61 @@
             <table class="container">
                 <thead>
                     <tr>
-                        <th><h1>NAME</h1></th>
-                        <th><h1>PICTURE</h1></th>
-                        <th><h1>POSITION</h1></th>
-                        <th><h1>CURRENT CLASS</h1></th>
+                        <th>
+                            <h1>NAME</h1>
+                        </th>
+                        <th>
+                            <h1>PICTURE</h1>
+                        </th>
+                        <th>
+                            <h1>POSITION</h1>
+                        </th>
+                        <th>
+                            <h1>CURRENT CLASS</h1>
+                        </th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>JEROME</td>
-                        <td><img src="images/1.jpg" alt="pic"></td>
+                        <td><img src="images/1.jpg" alt="pic" /></td>
                         <td>PRESIDENT</td>
                         <td>FORM 4</td>
                     </tr>
                     <tr>
                         <td>EDWIN</td>
-                        <td><img src="images/2.jpg" alt="pic"></td>
+                        <td><img src="images/2.jpg" alt="pic" /></td>
                         <td>LIBRARY SEC</td>
                         <td>FORM 3</td>
                     </tr>
                     <tr>
                         <td>CALEB</td>
-                        <td><img src="images/2.jpg" alt="pic"></td>
+                        <td><img src="images/2.jpg" alt="pic" /></td>
                         <td>GAMES CAPTAIN</td>
                         <td>FORM 2</td>
                     </tr>
                     <tr>
                         <td>JERREMY</td>
-                        <td><img src="images/1.jpg" alt="pic"></td>
+                        <td><img src="images/1.jpg" alt="pic" /></td>
                         <td>DH SEC</td>
                         <td>FORM 3</td>
                     </tr>
                 </tbody>
             </table>
         </div>
-        <div class="hIghlights">
-            <div id="slider">
-                <figure>
-                    <img src="images/logo1.png" alt />
-                    <img src="images/mission.jpg" alt />
-                    <img src="images/OIP (1).jpg" alt />
-                    <img src="images/principal.jpg" alt />
-                    <img src="images/OIP.jpg" alt />
-                </figure>
+        <!--highlights newone available-->
+        <div id="homepage-slider">
+            <div class="slider-hero">
+                <div>
+                    <img src="images/1.jpg" />
+                    <p class="captions">hello</p>
+                </div>
+                <div>
+                    <img src="images/2.jpg" />
+                </div>
+                <div>
+                    <img src="images/4.jpg" />
+                </div>
             </div>
         </div>
     </div>
@@ -220,8 +234,10 @@
     <!-- footer section ends -->
     <script type="text/javascript" src="loader.js"></script>
     <!-- link to loader js file -->
-    <!--link to slider js file-->
-    <script type="text/javascript" src="slider.js"></script>
+    <!--slider-->
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="slick.min.js"></script>
+    <script type="text/javascript" src="slide3.js"></script>
 </body>
 
 </html>
