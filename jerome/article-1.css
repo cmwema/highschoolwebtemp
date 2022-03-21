@@ -1,17 +1,16 @@
-section {
+.news-events{
     margin: 0;
     padding: 0;
     background: #dedede;
-    ;
 }
 
-h2 {
+.news-events h2 {
     text-align: center;
     font-family: cursive;
     font-size: 30px;
 }
 
-.wrapper {
+.news-events .wrapper {
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: minmax(100px auto);
@@ -19,67 +18,82 @@ h2 {
     width: 100%;
 }
 
-.wrapper>div {
-    background: #09689E;
+.news-events .wrapper>div {
+    background: #09689e;
     padding: 1em;
 }
 
-.wrapper>div:nth-child(odd) {
-    background: #09689E;
+.news-events .wrapper>div:nth-child(odd) {
+    background: #09689e;
 }
 
-.nested {
+.news-events .nested {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(100px auto);
     grid-gap: 1em;
 }
 
-.nested>div {
+.news-events .nested>div {
     border: #333 1px solid;
     padding: 1em;
     border-radius: 5px;
 }
 
-.box-1 {
+.news-events .box-1 {
+    /*align-self: start;*/
     grid-column: 1/2;
     grid-row: 1/2;
     display: grid;
     justify-items: center;
 }
 
-.box-2 {
+.news-events .box-2 {
+    /*align-self: end;*/
     grid-column: 2/3;
     grid-row: 1/2;
     display: grid;
     justify-items: center;
 }
 
-.box-3 {
+.news-events .box-3 {
+    /*justify-self: end;*/
     grid-column: 1/2;
     grid-row: 2;
     display: grid;
     justify-items: center;
 }
 
-.box-4 {
+.news-events .box-4 {
     grid-column: 2/3;
     grid-row: 2/3;
     display: grid;
     justify-items: center;
 }
 
-.box-5 {
+.news-events .box-5 {
     display: grid;
     justify-items: center;
 }
 
-.active:hover {
-    transform: scale(1.03);
+.news-events .box-6 {
+    display: grid;
+    justify-content: center;
+}
+
+.box-6 img {
+    width: 100%;
+    height: 75%;
+}
+
+.active p:hover {
+    background-color: transparent;
+    color: #f8f7ff;
     cursor: pointer;
     transition: all 1s ease;
     border-color: #333;
 }
+
 
 /* start of other news*/
 
@@ -104,7 +118,7 @@ h4 {
 }
 
 .wrapper-1>div:nth-child(odd) {
-    background: #09689E;
+    background: #09689e;
 }
 
 .nested-1 {
@@ -133,8 +147,9 @@ h4 {
 .read-more {
     display: flex;
     justify-content: center;
+    align-items: center;
     border: 2px solid white;
-    border-radius: 5px;
+    border-radius: 10px;
     color: #fff;
     background-color: #333;
     width: 80%;
@@ -147,4 +162,32 @@ h4 {
 
 .read-more:hover{
     transform: scale(1.05);
+    color: #047ebf;
+}
+
+.box-6 a {
+    align-items: center;
+    text-decoration: none;
+}
+
+button {
+    background-color: orange;
+    color: green;
+    display: flex;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    width: 75%;
+    height: 40px;
+    align-items: center;
+    font-weight: 1000;
+}
+
+button:hover {
+    transform: scale(1.05s);
+    transition: all ease 1s;
+    background-color: rgba(255,165,0, 0.8);
+    border: transparent;
+    border-radius: 10px;
 }
