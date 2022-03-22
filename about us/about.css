@@ -3,69 +3,109 @@
     padding: 0;
 }
 
-header{
-    background: #f44336;
-    height: 100px;
-
-    position:sticky;
-    top: 0;
-
-
-}
-
 main{
-    height: auto;
-background: #ffff;    /* background-size: cover; */
+    max-height: auto;
+    background: url(images/background.jpg);
     background-position: center;
+    background-size: cover;
+    margin-top: auto;
+}
+/* main content */
+.all-content{
+    display: grid;
+    grid-gap: 1em;
+    display: relative;
+    margin-top: 120px;
+
+    /* background: rgb(159, 204, 248); */
+
+    
 }
 
-.row{
-    margin-top: 20px;
-    margin-bottom: 50px;
-    display: flex;
+.all-content .mvo{
+    display: grid;
+    grid-gap: 10px;
 
-    background: rgba(122, 124, 156, 0.631);
-}
-
-.summary{
-    margin: 10px;
-    /* background: rgba(240, 240, 240, 0.7); */
-    border-radius: 20px;
-    width: 50%;
-    padding: 20px;
-    background: linear-gradient(145deg, #cacaca, #f0f0f0);
-    box-shadow: 6px 6px 70px #bebebe, -6px -6px 70px #ffff;
-}
-
-
-.table-col{
-    width: 50%;
-    border-radius: 6px;
-    background: linear-gradient(145deg, #535559, #a4b2ca);
-    box-shadow: inset 5px 5px 18px #51545a, inset -5px -5px 18px #98beff;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1em;
     margin: 20px;
+
+    
     
 
+    padding: 20px;
+    
 }
 
-table{
-    width: 100%;
-}
-
-table tr{
+.all-content .mvo .mvo-content{
+    background: rgba(36, 60, 95, 0.678);
     text-align: center;
+    border-radius: 10px;
+    justify-content: center;
+
+    margin: 20PX;
+
+    padding: 20px;
 }
 
-/* principal remarks*/
-.remarks{
-    background: rgba(90, 92, 114, 0.179);
-    margin: 30px;
-    padding: 10px;border-radius: 10px;
-    /* box-shadow: 18px 18px 35px #40454d, -18px -18px 35px #b8c5db; */
+.all-content .mvo .mvo-content:hover{
+    transform: scale(1.15);
+    transition: all 1s ease;
+
+    background: rgba(118, 3, 37, 0.685);
+}
+
+.all-content .mvo .mvo-content h3{
+    font-size: 50px;
+    color: #00ff37;
+
+    background: transparent;
+    margin: 20px;
+}
+
+.all-content .mvo .mvo-content p{
+    font-size: 30px;
+
+    margin: 20px;
+
+    color: #f1d4fa;
+
+}
+
+.all-content .history{
+    color: #f1d4fa;
+    display: grid;
+    grid-gap: 1em;
+    background: rgba(3, 12, 54, 0.836);
+
+    margin: 20px;
+    padding: 30px;
+
+    text-align: left;
+
+    border-radius: 10px;
+
+}
+
+.all-content .history p{
+    font-size: small;
 }
 
 
-/* highlights slider */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* highlights effect */
 
 .row3{
     margin:100px;
