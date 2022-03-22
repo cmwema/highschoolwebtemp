@@ -71,10 +71,10 @@ main{
 }
 
 .all-content .history{
-    color: #f1d4fa;
+    color: #000000;
     display: grid;
     grid-gap: 1em;
-    background: rgba(3, 12, 54, 0.575);
+    background: rgba(255, 255, 255, 0.405);
 
     margin: 20px;
     padding: 30px;
