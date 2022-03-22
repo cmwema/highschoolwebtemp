@@ -8,10 +8,12 @@ main{
     background: url(images/background.jpg);
     background-position: center;
     background-size: cover;
-    margin-top: auto;
+    margin: 0;
 }
 /* main content */
 .all-content{
+    margin: 0;
+    padding: 0;
     display: grid;
     grid-gap: 1em;
     display: relative;
@@ -29,10 +31,6 @@ main{
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 1em;
     margin: 20px;
-
-    
-    
-
     padding: 20px;
     
 }
@@ -76,7 +74,7 @@ main{
     color: #f1d4fa;
     display: grid;
     grid-gap: 1em;
-    background: rgba(3, 12, 54, 0.836);
+    background: rgba(3, 12, 54, 0.575);
 
     margin: 20px;
     padding: 30px;
@@ -87,10 +85,60 @@ main{
 
 }
 
-.all-content .history p{
-    font-size: small;
+.all-content .history h2{
+    color: #00ff37;
+    font-size: 50px;
+    text-align: center;
 }
 
+.all-content .history p{
+    font-size: 20px;
+}
+
+.all-content .principal-msg h1{
+    color: #00ff37;
+    font-size: 50px;
+    text-align: center;
+}
+
+.all-content .principal-msg{
+    display: grid;
+
+    grid-template-columns: 20% 80%;
+
+    background: #3a38382d;
+}
+
+.all-content .principal-msg img{
+    width: 100%;
+    height: 50;
+
+    border-radius: 50%;
+
+}
+
+.all-content .principal-msg h3{
+    color: #ffffff;
+    font-size: larger;
+    text-align: center;
+}
+
+
+.all-content .principal-msg .msg{
+    background: #c6c4c7be;
+
+    border-radius: 10px;
+    margin: 20px;
+    padding: 30px;
+    
+}
+
+.all-content .principal-msg .msg p{
+    margin: 20px;
+    padding: 10px;
+    text-align: justify;
+    font-size: 20px;
+}
 
 
 
