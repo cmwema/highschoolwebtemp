@@ -1,0 +1,11 @@
+img{
+	width: 600px;
+	height: 400px;
+	cursor: pointer;
+}
+.slider-hero-1 .captions{
+	text-align: center;
+}
+#homepage-slider-1{
+	width: 100%;
+}
