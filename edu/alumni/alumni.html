@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="highlights/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="highlights/slide.css">
     <link rel="stylesheet" type="text/css" href="highlights/slide-1.css">
+    <link rel="stylesheet" type="text/css" href="form.css">
 </head>
 
 <body>
@@ -53,65 +54,84 @@
                 </blockquote>
             </div>
             <div class="box2-2">
-                <a href="#"><button>REGISTER</button></a>
+                <button class="open-button" onclick="openForm()">REGISTER</button>
+                <div class="form-popup" id="myForm">
+                    <form method="GET" class="form-container">
+                        <h1>REGISTER IN OUR SCHOOL ALUMNI</h1>
+                        <input type="text" placeholder="Full names" name="full names" required>
+                        <input type="text" placeholder="Phone Number" name="phone" required>
+                        <input type="text" placeholder="Year Completed" name="year" required>
+                        <input type="text" placeholder="Enter Email" name="email" required>
+                        <button type="submit" class="btn">Register</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </form>
+                </div>
             </div>
-        </div>
-        <div class="box3">
-            <h3>testimonials</h3>
-            <div class="box box3">
-                <div id="homepage-slider">
-                    <div class="slider-hero">
-                        <figure class="snip1192">
-                            <blockquote>Calvin: Sometimes when I'm talking with others, my words can't keep up with my thoughts. I wonder why we think faster than we speak. Hobbes: Probably so we can think twice. </blockquote>
-                            <div class="author">
-                                <img src="images/f1.jpg" alt="alumni" />
-                                <h5>Pelican Steve <span> LittleSnippets</span></h5>
-                            </div>
-                        </figure>
-                        <figure class="snip1192 hover">
-                            <blockquote>Thank you. before I begin, I'd like everyone to notice that my report is in a professional, clear plastic binder...When a report looks this good, you know it'll get an A. That's a tip kids. Write it down.</blockquote>
-                            <div class="author">
-                                <img src="images/f2.jpg" alt="alumni" />
-                                <h5>Max Conversion<span> LittleSnippets</span></h5>
-                            </div>
-                        </figure>
-                        <figure class="snip1192">
-                            <blockquote>My behaviour is addictive functioning in a disease process of toxic co-dependency. I need holistic healing and wellness before I'll accept any responsibility for my actions.</blockquote>
-                            <div class="author">
-                                <img src="images/f3.jpg" alt="alumni" />
-                                <h5>Eleanor Faint<span> LittleSnippets</span></h5>
-                            </div>
-                        </figure>
-                        <figure class="snip1192">
-                            <blockquote>Calvin: Sometimes when I'm talking with others, my words can't keep up with my thoughts. I wonder why we think faster than we speak. Hobbes: Probably so we can think twice. </blockquote>
-                            <div class="author">
-                                <img src="images/f1.jpg" alt="alumni" />
-                                <h5>Pelican Steve <span> LittleSnippets</span></h5>
-                            </div>
-                        </figure>
-                        <figure class="snip1192 hover">
-                            <blockquote>Thank you. before I begin, I'd like everyone to notice that my report is in a professional, clear plastic binder...When a report looks this good, you know it'll get an A. That's a tip kids. Write it down.</blockquote>
-                            <div class="author">
-                                <img src="images/f2.jpg" alt="alumni" />
-                                <h5>Max Conversion<span> LittleSnippets</span></h5>
-                            </div>
-                        </figure>
-                        <figure class="snip1192">
-                            <blockquote>My behaviour is addictive functioning in a disease process of toxic co-dependency. I need holistic healing and wellness before I'll accept any responsibility for my actions.</blockquote>
-                            <div class="author">
-                                <img src="images/f3.jpg" alt="alumni" />
-                                <h5>Eleanor Faint<span> LittleSnippets</span></h5>
-                            </div>
-                        </figure>
+            <div class="box3">
+                <h3>testimonials</h3>
+                <div class="box box3">
+                    <div id="homepage-slider">
+                        <div class="slider-hero">
+                            <figure class="snip1192">
+                                <blockquote>Calvin: Sometimes when I'm talking with others, my words can't keep up with my thoughts. I wonder why we think faster than we speak. Hobbes: Probably so we can think twice. </blockquote>
+                                <div class="author">
+                                    <img src="images/f1.jpg" alt="alumni" />
+                                    <h5>Pelican Steve <span> LittleSnippets</span></h5>
+                                </div>
+                            </figure>
+                            <figure class="snip1192 hover">
+                                <blockquote>Thank you. before I begin, I'd like everyone to notice that my report is in a professional, clear plastic binder...When a report looks this good, you know it'll get an A. That's a tip kids. Write it down.</blockquote>
+                                <div class="author">
+                                    <img src="images/f2.jpg" alt="alumni" />
+                                    <h5>Max Conversion<span> LittleSnippets</span></h5>
+                                </div>
+                            </figure>
+                            <figure class="snip1192">
+                                <blockquote>My behaviour is addictive functioning in a disease process of toxic co-dependency. I need holistic healing and wellness before I'll accept any responsibility for my actions.</blockquote>
+                                <div class="author">
+                                    <img src="images/f3.jpg" alt="alumni" />
+                                    <h5>Eleanor Faint<span> LittleSnippets</span></h5>
+                                </div>
+                            </figure>
+                            <figure class="snip1192">
+                                <blockquote>Calvin: Sometimes when I'm talking with others, my words can't keep up with my thoughts. I wonder why we think faster than we speak. Hobbes: Probably so we can think twice. </blockquote>
+                                <div class="author">
+                                    <img src="images/f1.jpg" alt="alumni" />
+                                    <h5>Pelican Steve <span> LittleSnippets</span></h5>
+                                </div>
+                            </figure>
+                            <figure class="snip1192 hover">
+                                <blockquote>Thank you. before I begin, I'd like everyone to notice that my report is in a professional, clear plastic binder...When a report looks this good, you know it'll get an A. That's a tip kids. Write it down.</blockquote>
+                                <div class="author">
+                                    <img src="images/f2.jpg" alt="alumni" />
+                                    <h5>Max Conversion<span> LittleSnippets</span></h5>
+                                </div>
+                            </figure>
+                            <figure class="snip1192">
+                                <blockquote>My behaviour is addictive functioning in a disease process of toxic co-dependency. I need holistic healing and wellness before I'll accept any responsibility for my actions.</blockquote>
+                                <div class="author">
+                                    <img src="images/f3.jpg" alt="alumni" />
+                                    <h5>Eleanor Faint<span> LittleSnippets</span></h5>
+                                </div>
+                            </figure>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <script type="text/javascript" src="highlights/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="highlights/slick.min.js"></script>
-    <script type="text/javascript" src="highlights/slide.js"></script>
-    <script type="text/javascript" src="highlights/slide-1.js"></script>
+        <script type="text/javascript" src="highlights/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="highlights/slick.min.js"></script>
+        <script type="text/javascript" src="highlights/slide.js"></script>
+        <script type="text/javascript" src="highlights/slide-1.js"></script>
+        <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+        </script>
 </body>
 
 </html>
