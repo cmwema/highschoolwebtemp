@@ -1,0 +1,612 @@
+css selectors are ways of grabbing and manipulating html.
+1. Element selector
+   you can select entire elements without any special characters   i.e tag names
+2. Class selector
+   to reference we write .class to give style to the class
+3. ID selector
+   referenced by #ID to give style to the element with the given ID
+the hierarchy of the selectorin in increasing order;
+	element
+	class
+	ID
+	in-line styling.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+PSEUDOSELECTORS
+it is only visible only when something is done in your website
+includes; hover, first-child, ...last-child
+implemented by writing the element name: function
+e.g. h2: hover{color: blue;} every heading2 will be blue when the cursor is placed on it.
+     li: first-child{color:yellow;} every 1st list item in the selected list will be yellow
+     li: nth-child[2]{color:blue;}...every 2nd element in the list will be blue in the entire web page
+     li: only-child{color: purple;}..any element that is only 1 in a list will be purple
+     #hyperlinks: link{color:blue;} returns the color of links blue
+     #hyperlinks: visited{color:grey;} returns the color of clicked links to grey
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ADVANCED SELECTORS
+1. Adjacent sibling selector
+   Selects every single element that directly comes after a different element.
+   e.g. h2+a{color:red;} ..returns every link tag red that comes after heading 2 tag
+2. General sibling selector
+   works the same as adjacent sibling selector but the two elements must originate from
+   the same parent.
+   e.g. textarea ~ button {color:purple;} returns the color of every button green that comes after
+   the text area element. Both the text area and button element must originate from the same parent i.e. form
+3.Basic child selector
+  selects only elements that are contained in the same parent
+  e.g. ul > li {color: maroon;}..returns avery list item in the unordered list to color maroon.
+4. Basic Descendant selector
+   works the same as child selector but can also select elements that are descendants of the parent element.
+  e.g. <ul>
+         <li> item1 </li>
+         <li> item2 </li>
+         <li>  
+	    <ol>
+		<li> item 4 </li>
+		<li> item 5 </li>
+	    </ol> 
+         </li>
+        </ul>
+The code above shows an ordered list is a child of a list which is also a child of the parent unordered list.
+Hence the list in ordered list is a descendant of the unordered list
+To select the <li> in order list we use ;
+	ul li{ color: green;} N/B: there is no ~ sign as it was seen in child select.
+	The code above will select all the <li> element in the parent <ul> and  descendant<ol>
+         
+5. ATTRIBUTE SELECTORS.
+we select certain elements using attributes .
+e.g. h2[attribute=value]{color:blue}
+     
+     img[src^="../img/"]{some styles} here, we use attribute selectors to select all images that
+     has the source(attribute) which begins with the value given(.../img/)
+     img[src$="../img/pic.jpg"] selects images which only end with named path given in the value.
+     img[src*="../img/"] selects images which contains the value given anywhere in its source path.
+WHITESPACE ATTRIBUTE SELECTORS
+  Used to select specific elements in a class. To achieve this, the class to be selected should have
+  another unique class name along with the main class name but separated by whitespace.
+e.g. <h3 class="heading main-header"> WELCOMING</h3> here, heading is the main class name while
+     main-header is the 2nd unique name of the element in that class of heading. 
+     using css;
+              h3[class~=main-header]{backgroundcolor: green}
+              returns the heading in the class heading but with the value main-header to green.
+
+There is also another attribute subtitle which is more specific to the targeted element
+e.g. h3[class|=main-header]{backgroundcolor: green}
+     selects a headers 3 element that is in the class with a name which is directly equal to main-header or mainheader-
+     This selector is powerful in scenarios where we have several ID names e.g. heading-001 , heading -002 and we need
+     to select all the heading with IDs starting with heading and contains an extra numbers..(-001)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+CSS PROPERTIES
+They are contained within the selectors and determines how the web will look..e.g. colors, width, height etc
+It must contain a colon and a semi-colon. All the properties of a selectors are enclosed within curly braces. {}
+e.g. h2{color:red;}  h2 is the selector, color is the property attribute, red is the value.
+
+COLORING TECHNIQUES
+Hexcode have 16 differeent combination. It has 3 pairs each made up of red,green,blue. Meaning that the 1st pair
+ shows the amount of red color , the same is is true for the next two pairs. i.e. green and blue.
+e.g. to obtain pure blue the hexcode will be #0000ff
+RGB code is an alternative form of hexcode for those who finds it difficult to read.
+It has 3 pairs of numbers that ranges from 0-255. The explanation is the same as the hexcode.
+e.g. rgb code for pure blue will be rgb(000, 000, 255)
+we are reccommended to use the rgb code.
+FOR REFERENCE CHECK color picker on google ...web is W3Schools
+
+BACKGROUND COLOR & IMAGES
+The best attribute is the background rather than using background-color since it can allow you to
+use an image as a background.
+e.g. body{background: rgb(186. 229, 255);}
+To use an image as a background we use the function url()
+body{background: url(link to the image address)} The link can be to local machine or the internet.
+
+BACKGROUND SIZE & REPEAT
+In situations where we have set some space in your web for background image and unluckily the image
+given as background is too small to fill the space, bydefault the html will repeat the image(make copies)
+to fill the empty spaces. 
+If you don't wish this to happen , set the property background-repeat to no-repeat.
+
+Background size is determined by setting the width and height with the pixel dimensions.
+e.g. background-size:50px 30px; The 1st value is the height and width is the second value.
+To ensure the image covers the whole background space, we use the value "cover" but the disdvantage
+is the image quality will reduce due to too much enlargment. To eliminate this, we use the value
+"contain" but unluckily this may not eliminate repeat but rather just enlarge the pic while retaining its
+dimensions.
+e.g. background-size: cover; covers the whole space but image quality reduce
+     background-size: contain; cover the maximum space the image enlargement can allow
+     background-repeat: no-repeat; eliminates the repetition. by default the value is repeat.
+
+OPACITY/TRANSPARENCY
+Determines how the color set is transparent. To obtain this we use the rgb function but we add addition letter
+"a" stands for alpha which can take the values ranging from 0-1.
+e.g.  body{background: rgba(186. 229, 255,0.5);} meaning the transparency has been set to 50%
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+GRADIENTS
+A gradient is the transition between a number of colors. It can be either radial or linear.
+Radial moves from the center spreading outwards in spiral form while liner may transist from top to bottom
+or can be diagona or from left to right.
+1. A linear gradient.
+    background: linear-gradient(to right, red, green, blue); A color transition will occur from left to right of the
+    selected space btwn the color red to green and finally blue.
+    Alternative 1;
+    background: linear-gradient(to right, rgb(45, 23, 45), rgba(45, 23, 45, 0));color transition will occur from left to
+    right but it will be fading since the second rgb code has a tansparency of 0.
+    background: linear-gradient(to bottom right, red, green, blue); transition happening diagonally.
+    Alternative 2; instead of using position to define the directon of transition we can use angles.
+    e.g.
+	background: linear-gradient(215deg, rgb(45, 23, 45), rgba(45, 23, 45, 0)); The transition will occur to the 
+        3rd quandrant since 215 degrees is contained there. The reference angle i.e. the initial angle 0 degrees is 
+        at the center pointing upwards. moving to the right is +ve while to the left is -ve.
+
+2. Radial gradient
+ background: radial-gradient(red, blue, green);...circle or ellipse transition will occur from color red moving outward
+ to blue and finally green. Notice that we do not provide the direction as we did in linear gradient. Also we can specify
+ the percentage of each color in the transition and it reccommended that the first color to have the least percentage and 
+ the last one have the highest percentage. Also the shape of transition by default is ellipse but we can change it to circle .
+ e.g.  
+	background: radial-gradient(circle, red 20%, blue 40%, green 55%);
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+TYPES OF UNITS IN CSS
+Units tools used for measuring distances and sizes in web. Includes absolute and relative units.
+Absolute are fixed units that do not change depending  on the device used. includes cm mm inch px pt pc (1pc=12pt)
+Relative units depends on the reference used..i.e it is based on the parent element. 
+includes  % em(doubles the standard font size) vw and vh(viewheight and viewwidth; returns the width/height of an object according to the height/width of the page) 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+TEXT AND FONT MANIPULATION
+1. text decoration and transformation
+    Text decoration are used for lining the text. Mainly used in links by default the links are underline
+    e.g.
+	.link{text-decoration: none;} removes the lining
+	.link{text-decoration: underlined;}
+	.link{text-decoration: overline;} 
+	.link{text-decoration: line-through;} striked links
+
+2. text transformation
+   used for changing the text cases
+   e.g.
+	body{text-transform: uppercase;}
+	body{text-transform: lowercase;}
+	body{text-transform: capitalize;} sentence mode
+
+3. text alignment
+   arrangement of the text in the web page.
+   e.g.
+	body{text-align: center;} 
+	body{text-align: justify;} 
+	body{text-align: left;}
+	body{text-align: right;}
+
+4. font manipulation i.e. weight(bolding), style(italicing), size 
+	body{
+	     font-size: 1.25em;			
+             font-weight: 400; normal bold
+	     font-style: italic;	
+	     }
+5. image manipulation
+	we use float property to wrap text around the image. Incase of footers
+	it must be written after the float properties. 
+	e.g.
+	    img{
+		float: right; // image will shift to the right while text wraps from left
+		float: left; // image will shift to the left while text wraps from right
+		}
+	    footer{
+		   clear: both; // removes the footer from the image floating attribute hence will be dispalyed at the bottom.
+		   } //N/B: It must be written after the float property.
+FONT FAMILY
+Its a collection of fonts that has same features.Used to specify the general font to be used in the entire web. Includes;
+	body{
+	     font-family: sans-serif; used for softcopy outputs e.g. web i.e. calibri, arial, garamond, helvetica, book antiqua, avant garde
+	     font-family: serif; used for hardcopy printouts i.e. Times New Roman, Georgia, palatino
+	     font-family: monospace; each letter uses the same space in a line i.e. Courier New
+	     font-family: "Times New Roman", serif; the font by default is Times New Roman but incase the browser doesn't support it will use serif font.
+             }
+more fonts are found in google fonts web
+Importing external fonts.
+To achieve this, add the link of your web to the header elemennt. From there you can now use it on any element tag.
+e.g.
+    <head>
+	<link href="https://fonts.gooogle.com">
+    </head>
+	<body>
+	   <h2 class="heading"> My heading</h2>
+         </body>
+now using css;
+	.heading{ family-font: "Sarabun", sans-serif;}
+----------------------------------------------------------------------------------------------------------------------------------------------------
+CSS LAYOUT
+THE BOX MODEL
+The css box model is a series of positioning propeties designed to help with layout.
+Every single element is in css is sorrounded by invisible box which can be edited to make the web look nice.
+The invisible box has 4 main layers namely;
+	1. content layer: contains the general information displayed in the web.
+	2. padding: represents the space btwn the content and the border
+	3. border: divider btwn the padding and margin
+	4. margin: is the space btwn the border and all other content
+CONTENT SIZE
+It's reccommended to use px units on height while % or vw or em in width. That is height(absolute) while width(relative)
+CSS BORDERS
+borders are manipulated using border attribute.
+syntax:
+	border: size style color;
+	size--> weight of the border
+	style--> solid, dotted, dashed, double
+	color-->rgb code color
+e.g.
+	{border: 20px solid rgb(230 210 200);}
+MARGIN AND PADDING
+Marging represents the space btwn the element and outside contents while padding is
+the spacing btwn the contents and the border.
+e.g.
+	padding:20px;
+	margin:10px;
+Incase you wish to specify each size of padding/margin in every direction we use the syntax below:
+	padding:top right botton left;
+e.g.    padding: 20px 40px 5px 0px;
+	meaning--> there 20px padding at he top, 40px padding at the right, 5px padding at the botton and 0px padding at the left.
+	for margins it is also the same syntax
+	margin: 23px 2px 4px 12px;
+incase we assign only 2 values in the padding/margin attribute; 
+the 1st value will be for top and bottom while the 2nd value for left and right.
+e.g. marging: 20px 35px; means 20px margins on top and bottom while 35px margin on left and right.
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+FLOAT AND DISPLAY TYPES
+defines the way we look at documents.We can have block or inline elements and therefore they both have different display style.
+Block elements occupy there own line(s) even if there is some space left where they can be fixed in a line.e.g. <p> tag elements
+Inline elements occupy one line even if during source code they were put in different lines. e.g. <a> tag elements or <span> tag
+
+Float determines how text/images/files etc will be displayed on the web. It can be left, right,
+inherit(uses predefined float value of the parent element),none(default value)
+e.g.
+    float: right;	the selected element will be displayed at the left on the web.
+N/B: whenever an object is made to float on either side, the elements arround it will be moved to cover 
+the initial space it was occupying. e.g. when an image is made to float to the right also there were some
+texts below it, the result will be, the text will be moved just on the left side of the image. for reference: "3:15"
+Display attribute has 2 main standard values i.e. inline and block. But it also has none value and a combination of inline and block called inline-block
+The none property completely removes the sellected element from the web and its pace occupied by the other elements.
+inline-block value makes the selected element to be like in the center of the line i.e. to have eqeual margins from the left and right.
+It is very useful in cases we wish to show an element in block manner.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+CSS FLEXBOX reference: 3:28
+stands for flexible box. It is a feature in css that allow us to arrange items in any manner we wish to. 
+It is divided into 2, The container and the flex elements. The container which is the parent element in which the display type is active.Usually achieved using div element.
+The flex items are the chile elements of the container and make up the contents of the box.
+creating a flex box.
+	<div class="container"> parent
+		<div class="class-element"> A </div> childrens
+		<div class="class-element"> B </div>
+		<div class="class-element"> C </div>
+		<div class="class-element"> D </div>
+	</div>
+		
+using css now;
+	.container{
+		background-color: rgb(250,250,250);
+		margin: 10px;
+		display: flex;
+		flex-direction: row-reverse;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: flex-start;}
+FLEX-DIRECTION AND WRAP
+flex-direction determines the direction in which the flex-items will be displayed. It has the following
+attributes: row(default) arranges horizontally, column (arranges vertically),
+	    column-reverse(arranges vertically and reverses the order of the items),
+	    row-reverse(arranges horizontally but reverses the order of the items)
+WRAP is used to set a limit of how many flex items can be displayed in a row and if the limit is reached then
+the remaining items will be automatically be moved to the next row. Looks similarly as word-wrap in ms-wors ):
+It has the following properties: 
+1. wrap(whenever the limit is reached, the remainder is moved to the next row)
+2. wrap-reverse(works the same as wrap but interchanges the row in that incase of two rows, the flex items on
+   the 2nd row will now be shifted to the 1st row while flex items on the 1st row to the 2nd row)
+3. nowrap(default value of flex box and returns all the flex items squeezed on a single row)
+
+CONTENT ALIGNMENT
+Achieved using 2 attributes i.e. align-items for vertical alignment and justify-content for horizontal alignment.
+Both align-items and justify-content has 3 main universal properties that are the same and also they
+have 2 unique properties. The universal properties are:
+flex-start(aligns the items at the begining of the container i.e. at the left for horizontal alignment and up for vertical alignment)
+flex-end(aligns the items at the end of the container  i.e. at the right for horizontal alignment and down for vertical alignment)
+center (aligns the items at the center of the flex container)
+
+The 2 unique properties for justify-content affects the spacing btwn the items. They are shown below:
+space-between(the spacing between the flex item is distributed equally creating equal divisions between them along the same row.)
+space-around (creates equal spaces at all sides of the items creating equal divisions btwn the items and also the end items with the container margin)
+
+The 2 unique properties for align-items are:
+baseline(aligns all the items to same baseline no matter there size/font text etc. )
+stretch(aligns the items all through from top to bottom)
+
+FLEX ITEM ORDER
+It determines the order of each flex item and it is usually achieved using inline style with the attribute "order".
+e.g.
+	<div class="container"> 
+		<div class="class-element" style="order: 2";> A </div> 
+		<div class="class-element" style="order: 4";> B </div> 
+		<div class="class-element" style="order: 1";> C </div> 
+		<div class="class-element" style="order: 3";> D </div> 
+	</div>
+The above flex items will displayed such that; C A D B;meaning according to the order numbers given
+N/B: zero(0) is a default number and therefore we don't use it during ordering.
+SHRINK, GROW AND BASIS
+These attributes are used to manage the extra spacing between the items and container. They are also achieved using inline-styling i.e. in the opening <div> tag of each flex item.
+1. flex-basis(sets the minimum width of a flex item.)
+2. flex-grow(sets the proportional amount of the extra space each flex item will recieve to increase in size)
+    The default value of flex-grow is 0 meaning that the flex item with the flex-grow value 0 will not use the extra space to increase in size.Therefore 
+    we should define ach flex-grow value of each item incase we wish to increase their sizes uniformly.
+3. flex-shrink(sets the rate at which a flex item reduces in size after the item goes below the flex-basi.)
+Unlike flex-grow, the default value is 1 meaning every item reduces in size at the same rate. Incase you wish a specific
+flex item to remain constant at the flex-basis(minimum width) the flex-shrink value will be set to 0.
+
+These properties are usefull to ensure that our website looks the same in all  devices by using only few lines of codes.
+e.g.
+	<div class="container"> 
+		<div class="class-element"
+		 style="
+		   flex-basis: 5px; The minimum width it can achieve is 5px
+		   flex-grow:2 ; takes 2x extra space available and increases
+		   flex-shrink: 1; when the item width reaches 5px, it will reduce at the rate of 1% whenever it is further reduced below its minimum width i.e. 5px
+		"> A </div>
+		<div class="class-element"
+		 style="
+		   flex-basis: 10px; The minimum width it can achieve is 10px
+		   flex-grow: 4; takes 4x extra space available and increases
+		   flex-shrink: 0; The item will not reduce in size and remain constant at the minimum width even if reduced further.
+		"> B </div>
+		<div class="class-element"
+		 style="
+		   flex-basis: 5px; The minimum width it can achieve is 5px
+		   flex-grow: 1; takes 1x extra space available and increases
+		   flex-shrink:2 ;when the item width reaches 5px, it will reduce at the rate of 2% whenever it is further reduced below its minimum width i.e. 5px
+		"> C </div>
+		<div class="class-element"
+		 style="
+		   flex-basis: 10px; The minimum width it can achieve is 10px
+		   flex-grow: 0; will not take any extra space hence will not increase
+		   flex-shrink:1 ; when the item width reaches 10px, it will reduce at the rate of 1%nwhenever it is further reduced below its minimum width i.e. 10px
+		"> D </div>
+	</div>
+THE 'FLEX' PROPERTY
+The flex property is a short-hand to use the flex-grow, flex-shrink and flex-basis at one go. Also achienved using inline styling.
+syntax:
+	flex: grow shrink basis;
+e.g.
+	<div class="container"> 
+		<div class="class-element" style="flex: 2 1 5px;"> A </div>
+		<div class="class-element" style="flex: 4 0 10px;"> B </div>
+		<div class="class-element" style="flex: 1 2 5px;"> C </div>
+		<div class="class-element" style="flex: 0 1 10px;"> D </div>
+	</div>
+The effect on the flex items using flex property in the above code will be the same as the ones on the flex-grow, flex-shrink and flex-basis properties
+	
+ITEM ALIGNMENT
+Used for arranging the items individually in the flex container. It uses the same attributes and properties as the content alignment.
+It is more powerful than content alignment therefore incase there is already defined property of content alignment the item using
+item alignment will over-write it.
+syntax:
+	align-self: property;	N/B: the property can be center, flex-start, flex-end;
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+GRID VS FLEXBOX ref--> 4hr:08min 
+Similarly to flexbox, grid is a display type that can be used to activate certain layout features on a container element.
+They are both alternatives to other layout features availbable in css.
+They are completely different in the way they work, they are more manual providing more tools
+to layout your container in a specific way.
+Grid is also very focused on providing tools for both dimensions i.e. height and width whereas 
+flexbox foocuses on width only.
+CREATING A GRID
+It also follows the same procedure as flexbox. It has a parent i.e. container and child i.e. grid items.
+e.g. 
+	<div class="grid-container">
+		<div class="grid-item"> A </div>
+		<div class="grid-item"> B </div>
+		<div class="grid-item"> C </div>
+		<div class="grid-item"> D </div>
+	</div>
+NOW USING CSS  TO INITILIAZE IT AS GRID AND WORK ON IT.
+	.grid-container{
+		background-color: rgb(250, 250, 250);
+		margin: 10px;
+		height: 300px;
+		display: grid; initialize the container as a grid.
+		grid-template-columns: auto auto auto; creates 3 columns each of same size
+		grid-template-rows: auto 10px auto; creates 3 rows where the 1st & 3rd rows are same size while the 2nd row is 10px
+		justify-content: center; grid contents are horizontally centered in the grid container
+		align-content: space-evenly; contents are spaced evenly vertically in the grid container
+		grid-gap: 10px 25px; } sets the row spacing to 10px and column spacing to 25px 
+		
+	.grid-item{}
+
+
+TEMPLATE COLUMNS AND ROWS
+Sets the grid to start at a certain number of rows and columns and from there we
+now can specify the sizes of each individual rows and columns.
+The properties to be used are ;
+grid-template-columns: number of columns and their pixels.
+e.g.	grid-template-columns: 10px 4px 2px;
+grid-template-rows: takes the same values as grid-template-columns
+inorder to ensure your web looks similar we use the value auto. Equal rows will be
+created no matter the sizes of each item.
+
+JUSTIFY AND ALIGN GRID
+Works the same as the flex grid align and justify. Justify is horizontally whereas align is vertically
+Justify and align attribute has 5 universal properties as oppossed in flexbox which were only 3.
+N/B: There are some slight differences between the ,flex and grid ;justify and align properties.
+	1. attributes available are justify-content and align-content(whereas in flexbox was justify-content and align-items)
+	2. universal properties are center, start , end (whereas in flexbox was center, flex-start, flex-end)
+	3. unique properties in justify-content are space-around, space-evenly(whereas in flexbox was space-around and space-between)
+	4. unique properties in align-content are space-around, space-between, space-evenly(whereas in flexbox was stretch and baseline)
+
+ROWS AND COLUMN GAPS
+Determines the space between rows and columns. There are two attributes that can be used to achieve this;
+grid-row-gap: value in desired units(sets spacing between rows)
+grid-column-gap: value in desired units(sets spacing between columns)
+There is also a shorthand method for achieving row and column gaps at one go, that is;
+	grid-gap: rowvalue columnvalue(takes two values where the 1st is the row value and the 2nd the column value)
+
+ROWS AND COLUMN LINES
+used to arrange items according to the starting and ending point. Lines are core concept of grids.
+it is achieved using inline styling and the attribute grid-row and grid-column. The attributes takes two
+values separated by / which is the starting and ending lines respectively.
+e.g. style= "grid-row: 1/3"; means the item takes all the space from line 1 to line 3 of the grid container but vertically.
+     style= "grid-column: 2/4"; means the item takes all the space from line 2 to line 4 of the grid container but horizontally.
+Since setting the lines is a bit confusing since it is difficult to know where a line starts and ends. There we just set the initial 
+line where the item will start and the second value we enter the amount of lines it will take using the span element.
+e.g. style="grid-row: 1/ span 2;" means the selected item will start at line and and end at line 3; i.e. it will occupy 2 lines after the first line but going downwards.(vertically)
+     style="grid-column: 1/ span 2;" means the selected item will start at line and and end at line 3; i.e. it will occupy 2 lines after the first line but going rightwards.(horizontally)
+
+GRID AREA
+It is a grid property that is a short-hand for summarising the grid-row and grid-column at one go.
+Takes 4 values separated by /. 
+syntax:
+	style="grid-area:row-start/column-start/row-end/column-end;"
+REMEMBER: both row and column ends can either take an exact end line value or a span value.
+
+e.g. style="grid-area: 2/1/span 3/span 5;" means the item occupy the space i.e. horizontally from line 1 to line 6 and vertically from line 2 to line 5.
+     style="grid-area: 2/1/5/6;" means the same thing as the above code but the difference it has used end line values instead of span values. 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+THE TRANSITION PROPERTY ref--> 4hr:35min
+Used for animations effects for making your web look more appealing. It is achieved in the css section hence the item must
+be selected either as class or id to work.
+syntax:
+	transition: item duration effect-style delay;
+explanation: item is the object we want to take effect when the item is selected.e.g.  background, padding or all inorder to include all the features.
+	     duration is the time the transition effect will take. value is entered in seconds(s) or miliseconds(ms)
+	     effect-style is the type of animation. e.g. ease-in-out, ease and linear
+	     delay is the time taken before the animation effect starts.
+mainly we use pseudo selectors to achieve transition.
+N/B: THERE ARE SOME OLDER VERSION BROWSERS WHICH MAY FAIL TO SUPPORT THE TRANSITION EFFECTS AND THEREFORE
+     WE NEED TO ADD SOME PREFIX TO THE TRANSITION PROPERTY SO THAT ALL BROWSERS MAY HAVE SAME EFFECT.
+e.g.
+	-webkit- for chrome and safari
+	-moz- for mozilla firefox
+	-o- for opera
+	-ms- for microsoft edge
+e.g. 
+	-webkit-transition: background, padding 1s linear 0.5s;
+	-moz-transition: background, padding 1s linear 0.5s;
+	-o-transition: background, padding 1s linear 0.5s;
+	-ms-transition: background, padding 1s linear 0.5s;
+N/B: EACH PREFIX MUST BE INSERTED IN ITS OWN LINE OF CODE.
+
+TRANSFORMATION FUNCTIONS
+It must be set inside the main class selector for it to function well. It consists of two main properties i.e. Physical(movement) property
+and Rotation property.
+1. Physical property includes the translation and scaling properties. 
+   1.1  The translation property is achieved using the the translate function which takes two arguments i.e. x-shift and y-shift. This 2 values
+        will determine the new physical position of the selected item after being shifted.
+	 e.g. tranform: translate(20px, -10px); shifts the item 20px to the right and 10px to the bottom.
+						+ve x values means shift to right
+						-ve x values means shift to left
+						+ve y values means shift below
+						-ve y values means shift up
+						
+  We should remember to include the browser prefixes since the transformation functions are new features added to css recently and therefore
+  most older version browsers may fail to recognize them. To achieve this we use 
+		-webkit- for chrome and safari e.g. -webkit-transform: translate(20px, 30px);
+		-moz- for mozilla firefox e.g. -moz-transform: translate(20px, 30px);
+		-o- for opera	e.g. -o-transform: translate(20px, 30px);
+		-ms- for microsoft edge e.g. -o-transform: translate(20px, 30px);
+
+    1.2  The scaling property is used to enlarge the selected item its css box to the ratio of the value entered. It uses the the function scale 
+	 and takes only one integer/float value. Also it has scaleX() and scaleY() functions.
+	 scaleX() function takes one value which determines how much the object will be increased horizontally
+	 scaleY() function takes one value which determines how much the object will be increased vertically
+	  e.g. 	transform: scale(1.5); increases the selected item by one and a half in all directions(both horizontally and vertically)
+				       i.e. the padding, contents, margins and even borders.
+
+2. Rotation property used for rotating selected items. It has 4 main functions i.e. rotate(), skewX() and skewY(), skew() and matrix().
+   2.1 Rotate () function takes only one value which is in degree. +ve degree values rotates the item in the anticlockwwise manner but from the center
+	while -ve values rotates the item clockwise manner but also from the center as origin.
+	e.g. transform: rotate(90deg); rotates 90 degree in clockwise manner.
+
+   2.2 SkewX and SkewY also technically works the same as the rotate function but has some slight differences , i.e, for 
+	skewX the item is rotated only along the x-axis while skewY rotates the item only along the y axis as the origin.
+	e.g.	transform: skewX(60deg); rotates the vertical elements by 60 degrees in the anticlockwise direction.
+		transform: skewX(-60deg); rotates the horizontal elements by 60 degrees in the clockwise direction.
+   2.3 Skew() function is a combination of the the skewX and skewY functions. It performs their operations at one go.
+	It takes two values separated by a comma, the first 1 for skewX and the second for skewY.
+	e.g. transform: skew(60deg, -60deg); rotates the item in the same manner as the one indicted in section 2.2
+
+   2.4 Matrix() function is a shorthand for performing scaling, rotation and translation at one go.
+	It takes 6 values as its arguments. Also there are no units . for degrees we use 0. e.g. 0.45 means 45deg
+	for pixels we just ignore them and just write the values the same also is applied to the scaling values.
+	matrix template:
+			transform: matrix(scaleX, skewX, skewY, scaleY, translateX, translateY);
+			scaleX is the value using for enlarging the item in the horizontal direction.
+			skewX and skewY check their function in section 2.2 also the units are ignored. e.g. 90deg will written as 0.90
+			translateX and translateY values shifts the item physically to the values entered. Also the units are ignored. e.g 10px will be just 10
+
+	AN EXAMPLE: 	transform:matrix(1.5, 0.60, -0.60, 1.5, 20, -10); The item we'll be transformed as the items transformed before in sections 1.1, 1.2, 2.2 and 2.3 combined.
+			meaning: scaling values is 1.5 i.e scale(1.5);
+				 skew values are 60deg and -60deg for x and y values respectively. i.e. skewX(60deg); and skewY(-60deg);
+				 translate values are 20px and -10px for x and y respectively. i.e. tanslate(20px, -10px);
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+CREATING ANIMATIONS W/ KEYFRAMES ref--> 5hr:12min
+Animations and Transitions looks similar but there is a slight difference which is;
+In transition one must define each transition in each element that has the item they wish to apply
+but in Animations, animations are defined only once and applied to all items we wish to apply.
+Animations are also advantageous whereby they can be executed at the beginning without waiting 
+for anything to happen e.g. as it was in transitions where pseudo selectors must be executed for transition to occur.
+Animations can make the web looks more interactive.
+
+Animations are user initialize using @keyframes followed by user defined
+name we wish. Also it must have at least two keyvalues for it to be functional. 
+The 2 keywords are used to initialize the starting point and the ending point.
+The keywords can be defined using "from" meaning start and "to" meaning end. But the disadvantage is that
+using this technique we won't be able to add more than 2 keyvalues and therefore it is recoomended we use percentages
+where 0% means start and 100% means end. In between we can add any keyvalue we wish and give it any percentage that falls between 0 and 100%
+
+CREATING AN ANIMATION TEMPLATE example
+	@keyframe color-animation{
+		0%   {background: black;}
+		50%  {background: green;}
+		100% {background: blue;}
+		}
+
+	This animation will change the background the selected item from black to green and finally to blue.
+N/B: We can define more than one property under each keyvalue. e.g. under 50% keyvalue we can write;
+		50% {
+		      background: green;
+		      transform: translate(10px, 25px);
+		      }	
+	meaning:At 50% of the animation , the item background will be green and shifted to co-ordinate 10px and 25px with reference to its original position as center
+
+ADDING ANIMATION FOR USE IN AN ELEMENT
+Process of defining the animation inside the element we wish. lets say we have an element with the ID= "about-me"
+To add the animation effect to the item about-me we must do the following
+	#about-me{
+		animation-name: color-animation;
+		}
+	The above block of code just adds the animation but nothing will happen to the item untill we use some animation properties which are discussed next.
+
+ANIMATION PROPERTIES
+These are the tools which will now enable the animation to take effect.
+Lets now activate the animation in the about-me element.
+
+		#about-me{
+		animation-name: color-animation; seeks the name of the animation we defined
+		animation-duration: 4s; period the animation will be active
+		animation-timing-function: linear; style of animation. The linear style is normal(default). But it can also take ease, ease-in, ease-in-out
+		animation-delay: 2s; time we'll wait before the animation becomes active after opening the web. It can also be negative which means time 
+				      which ellapse and the animation is active therefore we opening the web the animation will be already active by the given time. 
+		animation-iteration-count: 3; Number of loops the animation will perform
+		animation-direction: alternate-reverse; means will start from 100% to 0% then back to 100%. Also it can take normal(0% to 100%)
+				     reverse(100% to 0%) and alternate(0% to 100% and back to 0%)
+
+		animation: color-animation 4s linear 2s 3 alternate-reverse; This a shorthand for performing all the animation properties at one go.
+			                                                     It takes 6 values and the order really matters. This is really important whem adding browser prefixes.
+		
+		}
+
+
+
+
+	
+
+
+
+
+
