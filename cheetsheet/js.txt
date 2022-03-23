@@ -1,0 +1,83 @@
+console.log() -> dispaly function
+data types in js
+	undefined
+	null
+	boolean
+	string
+	symbol
+	number
+	object
+variables are declared using
+	var -> global variables
+	let -> local variables
+	const -> constant variables
+statements are terminated with ; and block of statements are embedded inside{}
+uninitialized variables has the value of undefined.
+N/B: identifier namings uses the carmel syntax. the first word starts with 
+     small letter and other words starts with capital letters
+	e.g. myVariable; firstNum;
+
+Escape keys in js
+	\" ---> escapes double qoutes
+	\' ---> escapes single qoutes
+	\\ --->  adding a backslash
+	\n --->  adding a new-line 
+	\r ---> carriage return
+	\t ---> tab
+	\b ---> backspace
+	\f---> form-feed
+variable.length returns the number of characters of the given variable
+strings are immutable meaning you cant change them once created but
+you can replace them using assigning new value in the string.
+arrays are declared using var/const/let and data enclosed in[]
+myarray.push("text", 3); used to append data to an existing array.
+myarray.pop(); used to remove the last element in the array. i.e. 3
+myarray.shift(); used to remove the 1st element in the array. i.e. text
+myarray.unshift(); used to add element in the first index of the array
+
+functions helps to create reusable codes. syntax;
+	function myFunction(parameters){
+				statements;
+				statements;
+				return value;}
+
+variables declared outside function blocks are visible  in the entire program.
+i.e. they are globall variables declared using var keyword.
+However, variables declared inside function blocks using var keyword are considered
+as local variables. Inorder to change them to global variables while inside the 
+function block, we just remove the var keywork.
+
+Stand in line
+A cue is an abstract data structure where items are kept in order. New items can
+be added to the back of the cue while old items are taken off from the from of the cue.
+This is achieved by using the .push() and .shift() array function.
+N/B: The number of items in the array remains constant.
+
+In javascript, there are two main operators for equality;
+i.e. equality == and strict equality ===
+equality (==) sign compares two or more values by trying to convert them into 1 equal data 
+type before giving out the correct boolean answer. 
+strict equality === sign compares two or more values strictly by checking both their
+values and data type before returning the boolean output.
+e.g. 3 === 3 returns true
+     3 === '3' returns false 
+     but
+     3=='3' returns true
+Also inequality operator != does type conversion but 
+strict inequality operator !== does not perform type conversion
+e.g. 2!= '5' returns true
+     2!=='5' returns also returns true
+Logical operators are the same as C.
+
+Objects in javascript are same as dictionaries in python. They have key value pairs
+embedded inside curly braces{} and same as declared as variables.Values can be 
+accessed using dot notation or bracket notation.
+Bracket notation are useful only when the property name of an object has a space between 
+and also an integer property otherwise its recommended to use dot notation.
+object.name returns the value of the object with the key name
+object['name'] also returns the value of the object with the key name
+
+
+
+
+

@@ -42,10 +42,10 @@
 .alumni-container .box2-2 button {
     background: darkblue;
     border-radius: 15px;
-    font-size: 1.8em;
+    font-size: 1.2em;
     color: white;
     position: relative;
-    top: 50%;
+    top: 30%;
 }
 
 /*THE HOVER EFFECT IS NOT WORKING*/
