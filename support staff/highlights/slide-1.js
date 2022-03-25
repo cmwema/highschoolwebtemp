@@ -1,6 +1,6 @@
 (function($) {
     $(document).ready(function() {
-        $('.slider-hero').slick({
+        $('.slider-hero-1').slick({
             centerMode: true,
             autoplay: true,
             autoplaySpeed: 1500,
