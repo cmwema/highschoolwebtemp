@@ -1,9 +1,26 @@
+* {
+    user-select: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #dedede;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+main {
+    margin-top: 200px;
+}
 .staff-container{
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-auto-rows: minmax(100px, auto);
 	grid-gap: 1.03em;
 	width: 100%;
+	margin-top: 160px;
 }
 .staff-container .container td img{
 	width: 50px;

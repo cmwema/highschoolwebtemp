@@ -1,3 +1,19 @@
+/** {
+    user-select: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #dedede;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+main {
+    margin-top: 200px;
+}*/
 .alumni-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -5,6 +21,7 @@
     grid-gap: 1.05em;
     text-align: left;
     width: 100%;
+    /*margin-top: 150px;*/
 }
 
 .alumni-container>div {

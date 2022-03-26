@@ -1,16 +1,34 @@
-section {
+* {
+    user-select: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #dedede;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+main {
+    margin-top: 200px;
+}
+
+.article-section {
     margin: 0;
     padding: 0;
     background: #dedede;
+    margin-top: 160px;
 }
 
-h2 {
+.article-section h2 {
     text-align: center;
     font-family: cursive;
     font-size: 30px;
 }
 
-.wrapper {
+.article-section .wrapper {
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: minmax(100px auto);
@@ -18,29 +36,29 @@ h2 {
     width: 100%;
 }
 
-.wrapper>div {
+.article-section .wrapper>div {
     background: #09689e;
     padding: 1em;
 }
 
-.wrapper>div:nth-child(odd) {
+.article-section .wrapper>div:nth-child(odd) {
     background: #09689e;
 }
 
-.nested {
+.article-section .nested {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(100px auto);
     grid-gap: 1em;
 }
 
-.nested>div {
+.article-section .nested>div {
     border: #333 1px solid;
     padding: 1em;
     border-radius: 5px;
 }
 
-.box-1 {
+.article-section .box-1 {
     /*align-self: start;*/
     grid-column: 1/2;
     grid-row: 1/2;
@@ -48,7 +66,7 @@ h2 {
     justify-items: center;
 }
 
-.box-2 {
+.article-section .box-2 {
     /*align-self: end;*/
     grid-column: 2/3;
     grid-row: 1/2;
@@ -56,7 +74,7 @@ h2 {
     justify-items: center;
 }
 
-.box-3 {
+.article-section .box-3 {
     /*justify-self: end;*/
     grid-column: 1/2;
     grid-row: 2;
@@ -64,29 +82,29 @@ h2 {
     justify-items: center;
 }
 
-.box-4 {
+.article-section .box-4 {
     grid-column: 2/3;
     grid-row: 2/3;
     display: grid;
     justify-items: center;
 }
 
-.box-5 {
+.article-section .box-5 {
     display: grid;
     justify-items: center;
 }
 
-.box-6 {
+.article-section .box-6 {
     display: grid;
     justify-content: center;
 }
 
-.box-6 img {
+.article-section .box-6 img {
     width: 100%;
     height: 75%;
 }
 
-.active p:hover {
+.article-section .active p:hover {
     background-color: transparent;
     color: #f8f7ff;
     cursor: pointer;
@@ -97,13 +115,13 @@ h2 {
 
 /* start of other news*/
 
-h4 {
+.article-section h4 {
     text-align: center;
     font-size: 16px;
     font-family: cursive;
 }
 
-.wrapper-1 {
+.article-section .wrapper-1 {
     display: grid;
     justify-self: center;
     grid-template-columns: 1fr;
@@ -112,39 +130,39 @@ h4 {
     width: 85%;
 }
 
-.wrapper-1>div {
+.article-section .wrapper-1>div {
     background: lightgray;
     padding: 1em;
 }
 
-.wrapper-1>div:nth-child(odd) {
+.article-section .wrapper-1>div:nth-child(odd) {
     background: #09689e;
 }
 
-.nested-1 {
+.article-section .nested-1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(100px auto);
     grid-gap: 1em;
 }
 
-.nested-1>div {
+.article-section .nested-1>div {
     border: #333 1px solid;
     padding: 1em;
     border-radius: 5px;
 }
 
-.other-1 {
+.article-section .other-1 {
     grid-column: 1/2;
     grid-row: 1/2;
 }
 
-.wrapper-1 .nested-1 .active {
+.article-section .wrapper-1 .nested-1 .active {
     display: grid;
     justify-items: center;
 }
 
-.read-more {
+.article-section .read-more {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,22 +173,22 @@ h4 {
     width: 80%;
 }
 
-.read-more a {
+.article-section .read-more a {
     text-decoration: none;
     color: #fff;
 }
 
-.read-more:hover{
+.article-section .read-more:hover {
     transform: scale(1.05);
     color: #047ebf;
 }
 
-.box-6 a {
+.article-section .box-6 a {
     align-items: center;
     text-decoration: none;
 }
 
-button {
+.article-section button {
     background-color: orange;
     color: green;
     display: flex;
@@ -184,10 +202,10 @@ button {
     font-weight: 1000;
 }
 
-button:hover {
+.article-section button:hover {
     transform: scale(1.05s);
     transition: all ease 1s;
-    background-color: rgba(255,165,0, 0.8);
+    background-color: rgba(255, 165, 0, 0.8);
     border: transparent;
     border-radius: 10px;
 }

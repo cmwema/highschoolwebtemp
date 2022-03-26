@@ -1,9 +1,27 @@
+* {
+    user-select: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #dedede;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+main {
+    margin-top: 200px;
+}
+
 .admission-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: minmax(100px, auto);
     width: 100%;
     text-align: center;
+    margin-top: 150px;
 }
 
 .admission-container>div {
