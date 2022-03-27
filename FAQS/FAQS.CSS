@@ -1,9 +1,29 @@
+* {
+    user-select: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #dedede;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+main {
+    margin-top: 200px;
+}
 .FAQS-container{
 	display: flex;
 	justify-content: center;
 	width: 100%;
 	background: #eee;
+	margin-top: 150px;
 }
 .FAQS-container h3{
     font-family: 'courier', sans-serif;
+}
+.FAQS-container li{
+	margin: 50px;
 }
