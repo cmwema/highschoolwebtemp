@@ -1,0 +1,150 @@
+general template of html doc...
+	<!DOCTYPE html>
+	<html lang="en">
+		<header>
+			<meta charset="UTF-8">	
+		</header>
+	</html>
+
+A basic template of html...
+	<html>
+	<header>
+		<title> My web </title>
+	</header>
+	
+	<body>
+		<header>
+		   <nav>
+			<!-- here you include all the navigation tools of your web --!>
+		   </nav>
+		</header>
+		<main>
+		   <article>
+			<section> <!-- used for inserting adverts --!> </aside>
+			   <aside> 
+			   <h2>....</h2>
+			</section>
+		   </article>
+		</main>
+		<footer>
+
+		</footer>
+	</body>
+	</html>
+
+creating links in websites...
+	<a href="https://www.google.com"> Google's homepage</a>
+	<a href="https://www.google.com" target="_blank"> Google's homepage</a> <!-- opens the link in a new tab--!>
+	<a href="directory/image.png" download> image </a> <!--link for downloading images --!>
+        LINKS color can be changed such that Link is blue, ActiveLink is green, VisitedLink is grey.
+        <body link="blue" alink="green" vlink="grey">...</body> 
+
+creating images....
+	<img src="stored directory or link" alt="information written incase the image isn't loaded"/>
+	<img width="200px" height="100px" src="" alt=""> 
+	<!-- N/B: In addition to settting both the width & height, you can choose to only set either the width
+OR the height. By only setting one, html will automatically adjust the aspect ratio for you. So if you only set width="100"
+HTML will automatically resize the height correctly --!>
+
+using images as links...
+   <a href src ="web_page2"
+   <img src="stored directory or link" alt="information written incase the image isn't loaded"/>
+   /a>
+A comment syntax in html is shown below.
+<!-- some comments -->
+basic text formating tags
+<b> </b> ...bold some text
+<br/>...break and skip to a new line
+<hr/>... drawing horintal line 
+<i> </i>..italize text
+<em> </em>..empasize text(makes it bold)
+etc...
+
+using videos on websites...
+   <video src"relative path of video to the opened source file"></video>
+   <video src"video.mp4" poster="thumbnail.png" loop controls width="100px"> </video>
+   <!-- iframes is used for adding youtube web pages to your web page. To do this, you go to the youtube video you
+   wish to use and click on share then click embed. copy the html code written in combo box and paste to your source code--!>
+
+ifranes are generally used to dispaly other websites on your website.
+
+<iframe src="link to the website to be displayed" width="100px" height="80" frameborder="0"> 
+ texts incase the web isn't displayed
+</iframe>
+
+creating a list in webs...
+ 1.unordered lists
+   <ul>
+    <li>Apples<li>
+    <li>Apples<li>
+    <li>Apples<li>
+   </ul>
+2. ordered lists
+  <ul type="i">	   <!--"type" is used for inserting the numbering style. by default it is numbers 123...--!>
+    <li>Apples<li>
+    <li>Apples<li>
+    <li>Apples<li>
+   </ul>
+3. description lists
+  <dl>
+   <dt>Apples</dt> dt--->description term
+   <dd>-They are green and sweet</dd> dd---->description details about the dt
+   <dt>Oranges</dt>
+   <dd>-They are yellow and bitter</dd>
+  </dl>
+
+
+creating tables in webs...
+  <table>
+  <thead>
+   <caption>list of numbers</caption>
+    <tr>
+     <th>num1</th>
+     <th>num2</th>
+     <th>num3</th>
+    </tr>
+   </head>
+   <tbody>
+    <tr>
+     <td>one</td>
+     <td>two</td>
+     <td>three</td>
+    </tr>
+    <tr>
+     <td>four</td>
+     <td>five</td>
+     <td colspan="2">six</td> ...colspan determines the number of columns the data entered will take.
+    </tr>
+    </tbody>
+  </table>
+
+creating containers(divs and spans) in html...
+
+span are inline containers while divs are block containers.
+inline elements uses only the amount of space they just need meaning several data can be represented on
+the same line. e.g. <a href"#"> top</a>
+block elements uses the whole width that is uses each data is represented on a separate line even if there
+is space for some data to be squeezed on a single line. e.g. <p>paragraph</p>
+<span>span1</span>
+<div>division1</div>
+
+input tags and forms....
+<input type="text" value"default text"/>
+<input type="password">
+
+<textarea rows="10" cols"50">
+ your working area
+</textarea>
+
+radio buttons allows the user to only select 1 button at a time if the buttons have same name.
+check button allows the user to select several numbers of buttons.
+
+meta tags...
+Includes keywords that provides information to a search engine about contents of the page.
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name"description" content="brief description about your website">
+<meta name="keywords" content="html, firstweb, blahblah">
+<meta name="author" content="edwin odhis">
+
