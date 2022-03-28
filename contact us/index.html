@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>contact us</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="loader.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <!-- loader icon starts -->
+    <div class="loader"></div>
+    <!-- loader icon ends -->
+    <nav id="sticky-navbar">
+        <div class="logo">BOOKER ACADEMY</div>
+        <label for="btn" class="icon">
+        <span class="fa fa-bars"></span>
+      </label>
+        <input type="checkbox" id="btn" />
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li>
+                <label for="btn-1" class="show">About Us +</label>
+                <a href="#">About Us</a>
+                <input type="checkbox" id="btn-1" />
+                <ul>
+                    <li><a href="#">Who are we</a></li>
+                    <li><a href="#">Principles Message</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Resources</a></li>
+                </ul>
+            </li>
+            <li>
+                <label for="btn-2" class="show">Administration +</label>
+                <a href="#">Administration</a>
+                <input type="checkbox" id="btn-2" />
+                <ul>
+                    <li><a href="#">Staff</a></li>
+                    <li><a href="#">Students</a></li>
+                    <li><a href="#">Support Staff</a></li>
+
+                </ul>
+            </li>
+            <li>
+                <label for="btn-3" class="show">Academics +</label>
+                <a href="#">Academics</a>
+                <input type="checkbox" id="btn-3" />
+                <ul>
+                    <li><a href="#">Information</a></li>
+                    <li><a href="#">Admissions</a></li>
+                    <li>
+                        <label for="btn-4" class="show">Departments+</label>
+                        <a href="#">Departments <span class="fa fa-plus"></span></a>
+                        <input type="checkbox" id="btn-4" />
+                        <ul>
+                            <li><a href="#">Mathematics</a></li>
+                            <li><a href="#">Languages</a></li>
+                            <li><a href="#">Sciences</a></li>
+                            <li><a href="#">Humanities</a></li>
+                            <li><a href="#">Technicals</a></li>
+                            <li><a href="#">BOARDING</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <label for="btn-5" class="show">Co-Curriculum +</label>
+                <a href="#">Co-Curriculum</a>
+                <input type="checkbox" id="btn-5" />
+                <ul>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Clubs & Societies</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Alumni</a></li>
+            <li><a href="#">News & Events</a></li>
+            <li><a href="#">Contact Us</a></li>
+    </nav>
+    <div class="contact-container">
+        <div style="text-align: center">
+            <h2>Contact Us</h2>
+            <p>Leave Us A Message:</p>
+        </div>
+        <div class="row">
+            <div class="column icons">
+                <pre>
+                  <div>
+                  <img src="images/pin.png" width="32px" height="31px" alt="icon">      <label style="font-size: 1.5em;">Kakamega</label>
+                  </div>
+                  <div>
+                  <img src="images/question.png" width="32px" height="31px" alt="icon">  <label style="font-size: 1.5em;">school@info.com</label>
+                  </div>
+                  <div>
+                  <img src="images/telephone.png" width="32px" height="31px" alt="icon">  <label style="font-size: 1.5em;">+254700112435</label>
+                  </div>
+               </pre>
+            </div>
+            <div class="column">
+                <form action="/action_page.php">
+                    <label for="fname">Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your full name.." />
+                    <label for="email">Email</label>
+                    <input type="text" id="lname" name="email" placeholder="example@gmail.com" required />
+                    <label for="country">Phone</label>
+                    <input type="text" name="phone" placeholder="phonenumber" />
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height: 170px"></textarea>
+                    <input type="submit" value="Submit" />
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="loader.js"></script>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+</body>
+
+</html>
