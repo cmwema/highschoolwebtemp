@@ -1,9 +1,0 @@
-.FAQS-container{
-	display: flex;
-	justify-content: center;
-	width: 100%;
-	background: #eee;
-}
-.FAQS-container h3{
-    font-family: 'courier', sans-serif;
-}

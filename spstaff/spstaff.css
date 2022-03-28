@@ -1,0 +1,55 @@
+* {
+    user-select: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #dedede;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+main {
+    margin-top: 200px;
+}
+
+.spstaff-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    grid-auto-rows: minmax(100px, auto);
+    /*flexible height*/
+    width: 100%;
+    margin-top: 160px;
+}
+
+.spstaff-container>div {
+    background: #eee;
+    padding: 1em;
+}
+
+.spstaff-container h3 {
+    text-align: center;
+    font-family: "courier", sans-serif;
+}
+
+.spstaff-container>.summary {
+    grid-column: 1;
+}
+
+.spstaff-container>.speeches {
+    grid-column: 2 / span end;
+    grid-row: 1 / span 2;
+}
+
+.spstaff-container>.table {
+    grid-column: 1 / span end;
+    grid-row: 3 / span 2;
+}
+
+.spstaff-container>.highlights {
+    grid-column: 1 / span end;
+    grid-row: 5 / span 2;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>kitty donation</title>
+    <link rel="stylesheet" type="text/css" href="kitty.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <div class="navbar-container">
+        <nav id="sticky-navbar">
+            <div class="logo">BOOKER ACADEMY</div>
+            <label for="btn" class="icon">
+                <span class="fa fa-bars"></span>
+            </label>
+            <input type="checkbox" id="btn" />
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li>
+                    <label for="btn-1" class="show">About Us +</label>
+                    <a href="#">About Us</a>
+                    <input type="checkbox" id="btn-1" />
+                    <ul>
+                        <li><a href="#">Who are we</a></li>
+                        <li><a href="#">Principles Message</a></li>
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">Resources</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <label for="btn-2" class="show">Administration +</label>
+                    <a href="#">Administration</a>
+                    <input type="checkbox" id="btn-2" />
+                    <ul>
+                        <li><a href="#">Staff</a></li>
+                        <li><a href="#">Students</a></li>
+                        <li><a href="#">Support Staff</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <label for="btn-3" class="show">Academics +</label>
+                    <a href="#">Academics</a>
+                    <input type="checkbox" id="btn-3" />
+                    <ul>
+                        <li><a href="#">Information</a></li>
+                        <li><a href="#">Admissions</a></li>
+                        <li>
+                            <label for="btn-4" class="show">Departments+</label>
+                            <a href="#">Departments <span class="fa fa-plus"></span></a>
+                            <input type="checkbox" id="btn-4" />
+                            <ul>
+                                <li><a href="#">Mathematics</a></li>
+                                <li><a href="#">Languages</a></li>
+                                <li><a href="#">Sciences</a></li>
+                                <li><a href="#">Humanities</a></li>
+                                <li><a href="#">Technicals</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <label for="btn-5" class="show">Co-Curriculum +</label>
+                    <a href="#">Co-Curriculum</a>
+                    <input type="checkbox" id="btn-5" />
+                    <ul>
+                        <li><a href="#">Sports</a></li>
+                        <li><a href="#">Clubs & Societies</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Alumni</a></li>
+                <li><a href="#">News & Events</a></li>
+                <li><a href="#">Contact Us</a></li>
+        </nav>
+    </div>
+    <div class="kitty-container">
+        <div class="box1">
+            <h3>DONATION KITTY</h3>
+        </div>
+        <div class="box2">
+            <div class="box2-1">
+                <h3>mpesa procedure</h3>
+                <ol>
+                    <li>Go to M-PESA on your Phone</li>
+                    <li>Select Lipa na Mpesa</li>
+                    <li>Select Paybill</li>
+                    <li>Enter 4031259 as the business number</li>
+                    <li>Enter 1234 as the account number</li>
+                    <li>Enter the amount</li>
+                    <li>Enter your M-PESA PIN and send</li>
+                </ol>
+            </div>
+            <div class="box2-2">
+                <h3>bank details</h3>
+                <ol>
+                    <li>Co -operative bank - 123456789012</li>
+                    <li>kcb - 123456789012</li>
+                    <li>national bank - 123456789012</li>
+                    <li>equity bank - 123456789012</li>
+                </ol>
+            </div>
+            <div class="box2-3">
+                <h3>address details</h3>
+                <div class="details">
+                    <div id="address">
+                        <img src="images/location.png"> <span>some text</span>
+                    </div>
+                    <div id="phone">
+                        <img src="images/phone-call.png"> <span>some text</span>
+                    </div>
+                    <div id="email">
+                        <img src="images/email.png"> <span>some text</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box3">
+            <h3>Thank you section</h3>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+    $(".icon").click(function() {
+        $("span").toggleClass("cancel");
+    });
+    </script>
+</body>
+
+</html>
