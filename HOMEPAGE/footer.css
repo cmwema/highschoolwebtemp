@@ -1,186 +1,163 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
-.footer-container{
-    padding: 0px;
-    margin: 0px;
-
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.main-wrap{
-    width: 100%;
-    background: #ffff;
-}
-
-.footer-wrap{
-    position: relative;
-    margin-top: 0px; /*edit when fiting into the project*/
-
-    width: 100%;
-    padding: 0px;
-
-    background:#061422;
-
-
-}
-
-.subscribe{
-  width:100%;
-  display: inline-flex;
-  padding: 10px 35px;
-} 
-
-.subscribe h1{
-  margin: 5px;
-  padding: 0px;
-  color: #09689E;
-}
-
-.subscribe p{
-  margin: 5px;
-  padding: 10px;
-  color:chartreuse;
-}
-
-.subscribe form{
-  position: relative;
-}
-
-.subscribe form input{
-  position: relative;
-  height: 35px;
-  width: 320px;
-  margin: 10px 0px;
-  border: none;
-  outline: none;
-  padding: 6px;
-  font-size: 14px;
-
-  border-radius: 4px;
-}
-
-.subscribe form .btn{
-  height: 35px;
-  background: rgb(79, 156, 69);
-
-  border: none;
-  padding: 0px 6px;
-  margin: 8px 0px;
-  position: relative;
-  left: 20%;
-  font-weight: 600;
-  cursor: pointer;
-  color: #ffff;
-
-  border-radius: 7px;
-}
-
- .subscribe .btn:hover{
-  color: aqua;
-
-  transform: scale(1.2);
-  
-}
-.footer-wrap-1{
+.footer-section {
+    padding: 0;
+    margin: 0;
+    top: 0;
     display: flex;
+    align-items: flex-end;
 }
 
-.footer-section{
-    width: 22%;
-    display: block;
-    padding: 10px 35px;
-
+footer {
+    background-color: #121315;
+    color: #a7a7a7;
+    font-size: 16px;
 }
 
-.footer-section:last-of-type{
-    width: 34%;
+footer * {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
 }
 
-
-.footer-section h1{ 
-    font-size: 22px;
-    color: #ffff;
-    margin-bottom: 8px;
-
+footer .row {
+    padding: 1em 1em;
 }
 
-.footer-section a{
-    color: #ffff;
+.row.primary {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    align-items: stretch;
+}
 
-    display: block;
+.column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2em;
+    min-height: 15em;
+}
+
+footer h3 {
+    width: 100%;
+    text-align: left;
+    color: white;
+    font-size: 1.4em;
+    white-space: nowrap;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+}
+
+footer li:not(:first-child) {
+    margin-top: 0.8em;
+}
+
+footer ul li a {
+    color: #a7a7a7;
     text-decoration: none;
-    padding: 4px 0;
 }
 
-.footer-section p{
-  color: #ffff;
-  font-size: 16px;
+footer ul li a:hover {
+    color: #2a8ded;
 }
 
-/*  */
-
-
-.btn:hover{
-    background: rgb(107, 204, 94);
+.about p {
+    text-align: justify;
+    line-height: 2;
+    margin: 0;
 }
 
-
-.social-media{
-  text-decoration: none;
-
-  height: 26px;
-  display:inline-flex;
-  width: 26px;
-  padding: 5px;
-  border-radius: 5px;
-
-  margin: 10px;
-  background: rgb(240, 222, 222);
+footer input,
+button {
+    font-size: 1em;
+    padding: 1em;
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 5px;
 }
 
-.social-media a{
-  width: 14px;
-  height: 14px;
-
-  margin: 5px 5px 5px 5px;
+footer button {
+    border-radius: 30px;
+    background-color: #c7940a;
+    color: #ffffff;
 }
 
-
-h4{
-  font-family: sans-serif;
-  font-size: 10px;
-  font-style: italic;
+footer button:hover {
+    background-color: rgba(199, 148, 10, 0.8);
+    cursor: pointer;
 }
 
-h4 a:hover{
-  color: greenyellow;
+.subscribe a {
+    text-decoration: none;
 }
 
-.mini-gallery{
-  height: 80px;
-  width: 80px;
+.subscribe a button {
+    text-align: center;
+    justify-content: center;
 }
 
-.img-row{
-  display: flex;
+#donate button {
+    font-size: 1.5em;
+    border-radius: 10px;
+    background-color: rgb(15, 94, 3);
+    font-family: sans-serif;
+    font-weight: 700;
 }
 
-.img-col{
-  margin: 2px;
-
-}
-.img-col a{
-  margin: 2px;
-
+#donate button:hover {
+    background-color: rgba(15, 94, 3, 0.8);
+    color: gray;
 }
 
-.img-col a img{
-  border-radius: 5px;
+div.social {
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.4em;
+    flex-direction: row;
+    margin-top: 0.5em;
 }
 
-.img-col a:hover{
-  transform: scale(1.5);
-  transition: all 1s ease;
+.social i {
+    color: #bac6d9;
+}
 
+.copyright {
+    padding: 0.3em 1em;
+    background-color: #25262e;
+}
+
+.footer-menu {
+    float: left;
+    margin-top: 10px;
+}
+
+.footer-menu a {
+    color: #cfd2d6;
+    padding: 6px;
+    text-decoration: none;
+}
+
+.footer-menu a:hover {
+    color: #27bcda;
+}
+
+.copyright p {
+    font-size: 0.9em;
+    text-align: right;
+}
+
+@media screen and (max-width: 850px) {
+    .row.primary {
+        grid-template-columns: 1fr;
+    }
+}
+
+.footer-section input {
+    display: block;
 }
