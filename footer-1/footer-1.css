@@ -1,7 +1,7 @@
 .footer-section {
     padding: 0;
     margin: 0;
-    min-height: 100vh;
+    top: 0;
     display: flex;
     align-items: flex-end;
 }
@@ -27,7 +27,6 @@ footer .row {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 2fr;
     align-items: stretch;
-
 }
 
 .column {
@@ -88,21 +87,34 @@ footer button {
     background-color: #c7940a;
     color: #ffffff;
 }
-footer button:hover{
-    background-color: rgba(199, 148, 10,0.8);
+
+footer button:hover {
+    background-color: rgba(199, 148, 10, 0.8);
     cursor: pointer;
 }
-#donate button{
+
+.subscribe a {
+    text-decoration: none;
+}
+
+.subscribe a button {
+    text-align: center;
+    justify-content: center;
+}
+
+#donate button {
     font-size: 1.5em;
     border-radius: 10px;
     background-color: rgb(15, 94, 3);
     font-family: sans-serif;
     font-weight: 700;
 }
-#donate button:hover{
-    background-color: rgba(15, 94, 3,0.8);
+
+#donate button:hover {
+    background-color: rgba(15, 94, 3, 0.8);
     color: gray;
 }
+
 div.social {
     display: flex;
     justify-content: space-around;
@@ -128,7 +140,6 @@ div.social {
 .footer-menu a {
     color: #cfd2d6;
     padding: 6px;
-
     text-decoration: none;
 }
 
@@ -145,8 +156,8 @@ div.social {
     .row.primary {
         grid-template-columns: 1fr;
     }
-
 }
+
 .footer-section input {
     display: block;
 }
