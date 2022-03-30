@@ -1,0 +1,163 @@
+.footer-section {
+    padding: 0;
+    margin: 0;
+    top: 0;
+    display: flex;
+    align-items: flex-end;
+}
+
+footer {
+    background-color: #121315;
+    color: #a7a7a7;
+    font-size: 16px;
+}
+
+footer * {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+footer .row {
+    padding: 1em 1em;
+}
+
+.row.primary {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    align-items: stretch;
+}
+
+.column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2em;
+    min-height: 15em;
+}
+
+footer h3 {
+    width: 100%;
+    text-align: left;
+    color: white;
+    font-size: 1.4em;
+    white-space: nowrap;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+}
+
+footer li:not(:first-child) {
+    margin-top: 0.8em;
+}
+
+footer ul li a {
+    color: #a7a7a7;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: #2a8ded;
+}
+
+.about p {
+    text-align: justify;
+    line-height: 2;
+    margin: 0;
+}
+
+footer input,
+button {
+    font-size: 1em;
+    padding: 1em;
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 5px;
+}
+
+footer button {
+    border-radius: 30px;
+    background-color: #c7940a;
+    color: #ffffff;
+}
+
+footer button:hover {
+    background-color: rgba(199, 148, 10, 0.8);
+    cursor: pointer;
+}
+
+.subscribe a {
+    text-decoration: none;
+}
+
+.subscribe a button {
+    text-align: center;
+    justify-content: center;
+}
+
+#donate button {
+    font-size: 1.5em;
+    border-radius: 10px;
+    background-color: rgb(15, 94, 3);
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+#donate button:hover {
+    background-color: rgba(15, 94, 3, 0.8);
+    color: gray;
+}
+
+div.social {
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.4em;
+    flex-direction: row;
+    margin-top: 0.5em;
+}
+
+.social i {
+    color: #bac6d9;
+}
+
+.copyright {
+    padding: 0.3em 1em;
+    background-color: #25262e;
+}
+
+.footer-menu {
+    float: left;
+    margin-top: 10px;
+}
+
+.footer-menu a {
+    color: #cfd2d6;
+    padding: 6px;
+    text-decoration: none;
+}
+
+.footer-menu a:hover {
+    color: #27bcda;
+}
+
+.copyright p {
+    font-size: 0.9em;
+    text-align: right;
+}
+
+@media screen and (max-width: 850px) {
+    .row.primary {
+        grid-template-columns: 1fr;
+    }
+}
+
+.footer-section input {
+    display: block;
+}

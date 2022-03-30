@@ -7,13 +7,19 @@
     <title>kitty donation</title>
     <link rel="stylesheet" type="text/css" href="kitty.css">
     <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="loader.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="../footer-1/footer-1.css">
+    <script src="jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
+    <!-- loader icon starts -->
+    <div class="loader"></div>
+    <!-- loader icon ends -->
     <div class="navbar-container">
         <nav id="sticky-navbar">
             <div class="logo">BOOKER ACADEMY</div>
@@ -108,15 +114,19 @@
             <div class="box2-3">
                 <h3>address details</h3>
                 <div class="details">
-                    <div id="address">
+                    <pre>
+                      
+                        <div id="address">
                         <img src="images/location.png"> <span>some text</span>
-                    </div>
-                    <div id="phone">
+                        </div>
+                        <div id="phone">
                         <img src="images/phone-call.png"> <span>some text</span>
-                    </div>
-                    <div id="email">
+                        </div>
+                        <div id="email">
                         <img src="images/email.png"> <span>some text</span>
-                    </div>
+                        </div>
+                    </pre>
+
                 </div>
             </div>
         </div>
@@ -196,10 +206,12 @@
     </section>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script>
-    $(".icon").click(function() {
-        $("span").toggleClass("cancel");
-    });
+        $(".icon").click(function() {
+            $("span").toggleClass("cancel");
+        });
     </script>
+    <script type="text/javascript" src="loader.js"></script>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
 </body>
 
 </html>
