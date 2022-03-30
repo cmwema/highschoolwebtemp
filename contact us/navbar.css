@@ -192,13 +192,13 @@ input {
     text-align: center;
 }
 
-header {
+.navbar-container header {
     font-size: 35px;
     font-weight: 600;
     padding: 10px 0;
 }
 
-p {
+.navbar-container p {
     font-size: 30px;
     font-weight: 500;
 }

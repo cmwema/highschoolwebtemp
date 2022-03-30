@@ -7,13 +7,19 @@
     <title>admissions</title>
     <link rel="stylesheet" type="text/css" href="admission.css">
     <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="loader.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="../footer-1/footer-1.css">
+    <script src="jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
+    <!-- loader icon starts -->
+    <div class="loader"></div>
+    <!-- loader icon ends -->
     <div class="navbar-container">
         <nav id="sticky-navbar">
             <div class="logo">BOOKER ACADEMY</div>
@@ -87,8 +93,10 @@
                 <h3>The criteria for admission to Form One are:</h3>
                 <ul>
                     <li>All candidates should be aged 15 and below and MUST choose Starehe Girls' Centre as their first choice of National School option.</li>
-                    <li>Each candidate MUST complete the official Form 1 Blue Application Form available at the school, and return to Starehe Girls' Centre by <strong>31<sup>ST</sup> JULY</strong> of the year they are sitting their Kenya Certificate of Primary Education. The applicant should attain high marks in the KCPE Examinations to be considered for admission.</li>
-                    <li>Forms MUST be signed by the candidate's parent or guardian, her Head Master or Head Mistress, the Chief and a minister of religion such as a pastor, priest or Imam - all of whom must verify the girl's social background.(Not applicable to Self Sponsored Students)</li>
+                    <li>Each candidate MUST complete the official Form 1 Blue Application Form available at the school, and return to Starehe Girls' Centre by <strong>31<sup>ST</sup> JULY</strong> of the year they are sitting their Kenya Certificate of Primary
+                        Education. The applicant should attain high marks in the KCPE Examinations to be considered for admission.</li>
+                    <li>Forms MUST be signed by the candidate's parent or guardian, her Head Master or Head Mistress, the Chief and a minister of religion such as a pastor, priest or Imam - all of whom must verify the girl's social background.(Not applicable
+                        to Self Sponsored Students)</li>
                 </ul>
             </div>
             <div class="box1-2">
@@ -100,11 +108,13 @@
         <div class="box2">
             <div class="box2-1">
                 <h3>The selection process</h3>
-                <p>After the KCPE marking in November/ December, individual Application Form are further considered by a select committee of 12 members. If there are any areas of uncertainity relating to a girl's background, an Officer from the Sponsorship Office may be released to make a home visit. The whole process takes a maximum of one week and involves much debate before final agreement is reached.</p>
+                <p>After the KCPE marking in November/ December, individual Application Form are further considered by a select committee of 12 members. If there are any areas of uncertainity relating to a girl's background, an Officer from the Sponsorship
+                    Office may be released to make a home visit. The whole process takes a maximum of one week and involves much debate before final agreement is reached.</p>
             </div>
             <div class="box2-2">
                 <h3>Admission Letter</h3>
-                <p>All the qualified sponsored students will obtain an admission letters through the Ministry of Education website (Click the DOWNLOAD FORM button to download the admission form) Form One Admission Letter. The letter bears joining instructions for Form One students. A list of qualified students is also posted at a notice board found at Starehe Girls Centre main gate for parents and guardians viewing.</p>
+                <p>All the qualified sponsored students will obtain an admission letters through the Ministry of Education website (Click the DOWNLOAD FORM button to download the admission form) Form One Admission Letter. The letter bears joining instructions
+                    for Form One students. A list of qualified students is also posted at a notice board found at Starehe Girls Centre main gate for parents and guardians viewing.</p>
             </div>
             <div class="box2-3">
                 <a href="blueformn.pdf" target="_blank"><button>DOWNLOAD FORM</button></a>
@@ -112,7 +122,8 @@
         </div>
         <div class="box3">
             <h3>Use the map below to find us</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7683585095715!2d35.29167231399554!3d0.28673499979080647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1780f5ec5a9f9d87%3A0x159cb96600e6f677!2sMoi%20University%20Main%20Campus%20Eldoret!5e0!3m2!1sen!2ske!4v1647942648802!5m2!1sen!2ske" width="80%" height="300px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7683585095715!2d35.29167231399554!3d0.28673499979080647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1780f5ec5a9f9d87%3A0x159cb96600e6f677!2sMoi%20University%20Main%20Campus%20Eldoret!5e0!3m2!1sen!2ske!4v1647942648802!5m2!1sen!2ske"
+                width="80%" height="300px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </div>
     <section class="footer-section">
@@ -187,10 +198,12 @@
     </section>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script>
-    $(".icon").click(function() {
-        $("span").toggleClass("cancel");
-    });
+        $(".icon").click(function() {
+            $("span").toggleClass("cancel");
+        });
     </script>
+    <script type="text/javascript" src="loader.js"></script>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
 </body>
 
 </html>
