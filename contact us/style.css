@@ -9,6 +9,10 @@ body {
 
 /* Style inputs */
 
+.contact-container {
+    margin-top: auto;
+}
+
 .contact-container input[type="text"],
 select,
 textarea {
