@@ -6,6 +6,9 @@
     font-family: 'courier', sans-serif;
     color: greenyellow;
 }
+#myForm input{
+    display: block;
+}
 .open-button {
     background-color: #555;
     color: white;

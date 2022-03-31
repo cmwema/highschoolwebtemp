@@ -11,10 +11,6 @@ body {
     overflow-x: hidden;
 }
 
-main {
-    margin-top: 200px;
-}
-
 .spstaff-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -53,3 +49,4 @@ main {
     grid-column: 1 / span end;
     grid-row: 5 / span 2;
 }
+
