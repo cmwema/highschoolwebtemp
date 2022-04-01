@@ -8,7 +8,8 @@
             cssEase: 'linear',
             swipe: true,
             adaptiveHeight: true,
-            slidesToShow: 3
+            slidesToShow: 3,
+            arrows: false
         });
     });
     

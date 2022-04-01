@@ -22,6 +22,7 @@ main {
     width: 100%;
     text-align: center;
     margin-top: 150px;
+
 }
 
 .admission-container>div {
@@ -81,9 +82,10 @@ main {
 .admission-container .box2-3 button {
     border-radius: 10px;
     position: relative;
-    left: 45%;
+    left: 50%;
     background: darkblue;
     color: white;
+    width: 20%;
 }
 
 .admission-container .box2-3 button:hover {
