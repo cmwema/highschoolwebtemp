@@ -1,3 +1,7 @@
+main {
+    margin-top: 70px;
+}
+
 .wrapper {
     display: grid;
     margin-top: 40px;
@@ -20,7 +24,7 @@
 
 .wrapper h3 {
     text-align: center;
-    font-family: 'courier', sans-serif;
+    font-family: "courier", sans-serif;
 }
 
 .header {
