@@ -20,7 +20,6 @@ main {
     grid-gap: 1em;
     display: relative;
     margin-top: 120px;
-    /* background: rgb(159, 204, 248); */
 }
 
 .all-content .mvo {
@@ -33,7 +32,7 @@ main {
 }
 
 .all-content .mvo .mvo-content {
-    background: rgba(36, 60, 95, 0.678);
+    background: #eee;
     text-align: center;
     border-radius: 10px;
     justify-content: center;
@@ -42,29 +41,29 @@ main {
 }
 
 .all-content .mvo .mvo-content:hover {
-    transform: scale(1.15);
+    transform: scale(1.03);
     transition: all 1s ease;
-    background: rgba(118, 3, 37, 0.685);
+    background: #ddd;
+    cursor: pointer;
 }
 
 .all-content .mvo .mvo-content h3 {
-    font-size: 50px;
-    color: #00ff37;
-    background: transparent;
+    font-size: 3em;
+    font-family: 'courier', sans-serif;
     margin: 20px;
+    text-decoration: underline;
 }
 
 .all-content .mvo .mvo-content p {
-    font-size: 30px;
+    font-size: 20px;
     margin: 20px;
-    color: #f1d4fa;
 }
 
 .all-content .history {
-    color: #f1d4fa;
+    /* color: #f1d4fa; */
     display: grid;
     grid-gap: 1em;
-    background: rgba(3, 12, 54, 0.575);
+    background: #eee;
     margin: 20px;
     padding: 30px;
     text-align: left;
@@ -72,9 +71,10 @@ main {
 }
 
 .all-content .history h2 {
-    color: #00ff37;
-    font-size: 50px;
+    /* color: #00ff37; */
+    font-size: 3em;
     text-align: center;
+    font-family: 'Courier New', Courier, sans-serif;
 }
 
 .all-content .history p {
@@ -90,7 +90,7 @@ main {
 .all-content .principal-msg {
     display: grid;
     grid-template-columns: 20% 80%;
-    background: #3a38382d;
+    background: #eee;
 }
 
 .all-content .principal-msg img {
@@ -100,13 +100,13 @@ main {
 }
 
 .all-content .principal-msg h3 {
-    color: #ffffff;
-    font-size: larger;
+    font-size: 3em;
     text-align: center;
+    font-family: 'Courier New', Courier, sans-serif;
 }
 
 .all-content .principal-msg .msg {
-    background: #c6c4c7be;
+    background: #eee;
     border-radius: 10px;
     margin: 20px;
     padding: 30px;

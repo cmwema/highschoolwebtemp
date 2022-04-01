@@ -26,10 +26,15 @@ main {
 }
 
 .alumni-container>div {
-    /*    position: relative;*/
     background: #eee;
     padding: 0.5em;
 }
+.alumni-container h3{
+    text-align: center;
+    font-family: 'courier', sans-serif;
+    font-size: 1.5em;
+}
+
 
 .alumni-container>div:nth-child(odd) {
     background: #ddd;
@@ -53,7 +58,7 @@ main {
     grid-row: 1;
     grid-column: 1/3;
     padding: 20px;
-    font-size: 2em;
+    font-size: 1.7em;
 }
 
 .alumni-container .box2 .box2-2 {
@@ -71,9 +76,7 @@ main {
 }
 
 
-/*THE HOVER EFFECT IS NOT WORKING*/
-
-.alumni-container.box2-2button: hover {
+.alumni-container.box2-2 button :hover {
     transform: scale(1.3);
     cursor: pointer;
     background: rgba(0, 0, 139, 0.8);
@@ -83,4 +86,9 @@ main {
     grid-row: 3;
     grid-column: 1 / span end;
     background: navy;
+}
+.alumni-container .box3 h3{
+    font-size: 1.7em;
+    text-transform: uppercase;
+
 }
