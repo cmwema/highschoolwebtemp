@@ -1,0 +1,9 @@
+img {
+    width: 500px;
+    height: 450px;
+    cursor: pointer;
+}
+
+#homepage-slider {
+    width: 100%;
+}

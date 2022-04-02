@@ -1,0 +1,85 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-auto-rows: minmax(100px auto);
+    grid-gap: 1em;
+    margin-top: 50px;
+}
+
+.wrapper>div {
+    background: lightgray;
+    padding: 1em;
+}
+
+.wrapper>div:nth-child(odd) {
+    background: #ddd;
+}
+
+.wrapper h3 {
+    text-align: center;
+    font-family: "courier", sans-serif;
+}
+
+.header {
+    grid-column: 1 / span end;
+    grid-row: 2;
+    margin-top: 75px;
+}
+
+.nested {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row: 3;
+    grid-column: 1 / span end;
+    grid-auto-rows: minmax(100px auto);
+    grid-gap: 1em;
+}
+
+.nested>div {
+    border: #333 1px solid;
+    padding: 1em;
+}
+.wrapper .nested .box2 blockquote {
+    background: #f9f9f9;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+.wrapper .nested .box2 blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+.wrapper .nested .box2 blockquote p {
+    display: inline;
+}
+
+
+.nested.box1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.nested .box2 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.wrapper .table-content {
+    grid-column: 1 / span end;
+    grid-row: 4;
+}
+
+.wrapper .highlights {
+    grid-row: 5;
+    grid-column: 1 / span end;
+    grid-auto-rows: minmax(100px auto);
+    width: 100%;
+}
