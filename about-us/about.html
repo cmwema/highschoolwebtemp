@@ -7,90 +7,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About us</title>
     <link rel="stylesheet" href="about.css">
-    <link rel="text/javascript" href="../components/jquery-3.6.0.min.js">
-    <!-- <link rel="stylesheet" href="../components/loader.css"> -->
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="../navigation/navbar.css">
+    <link rel="stylesheet" href="../footer-1/footer-1.css">
+    <link rel="stylesheet" href="../components/loader.css">
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <script src="../components/jquery-3.6.0.min.js"></script>
+
 </head>
 
 <body>
     <!-- loader icon starts -->
     <div class="loader"></div>
     <!-- loader icon ends -->
-    <!-- header -->
-    <header>
-        <div class="header">
-            <nav id="sticky-navbar">
-                <div class="logo">BOOKER ACADEMY</div>
-                <label for="btn" class="icon">
+    <nav id="sticky-navbar">
+        <div class="logo">BOOKER ACADEMY</div>
+        <label for="btn" class="icon">
                 <span class="fa fa-bars"></span>
               </label>
-                <input type="checkbox" id="btn" />
+        <input type="checkbox" id="btn" />
+        <ul>
+            <li><a href="../HOMEPAGE/index.html">Home</a></li>
+            <li>
+                <label for="btn-1" class="show">About Us +</label>
+                <a href="#">About Us</a>
+                <input type="checkbox" id="btn-1" />
                 <ul>
-                    <li><a href="../HOMEPAGE/index.html">Home</a></li>
-                    <li>
-                        <label for="btn-1" class="show">About Us +</label>
-                        <a href="#">About Us</a>
-                        <input type="checkbox" id="btn-1" />
-                        <ul>
-                            <li><a href="../about-us/about.html">Who are we</a></li>
-                            <li><a href="../about-us/about.html">Principles Message</a></li>
-                            <li><a href="../about-us/about.html">History</a></li>
-                            <li><a href="../resources/resource.html">Resources</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <label for="btn-2" class="show">Administration +</label>
-                        <a href="#">Administration</a>
-                        <input type="checkbox" id="btn-2" />
-                        <ul>
-                            <li><a href="../staff/staff.html">Staff</a></li>
-                            <li><a href="../students/student.html">Students</a></li>
-                            <li><a href="../spstaff/spstaff.html">Support Staff</a></li>
+                    <li><a href="../about-us/about.html">Who are we</a></li>
+                    <li><a href="../about-us/about.html">Principles Message</a></li>
+                    <li><a href="../about-us/about.html">History</a></li>
+                    <li><a href="../resources/resource.html">Resources</a></li>
+                </ul>
+            </li>
+            <li>
+                <label for="btn-2" class="show">Administration +</label>
+                <a href="#">Administration</a>
+                <input type="checkbox" id="btn-2" />
+                <ul>
+                    <li><a href="../staff/staff.html">Staff</a></li>
+                    <li><a href="../students/student.html">Students</a></li>
+                    <li><a href="../spstaff/spstaff.html">Support Staff</a></li>
 
-                        </ul>
-                    </li>
+                </ul>
+            </li>
+            <li>
+                <label for="btn-3" class="show">Academics +</label>
+                <a href="#">Academics</a>
+                <input type="checkbox" id="btn-3" />
+                <ul>
+                    <li><a href="../academic/academic.html">Information</a></li>
+                    <li><a href="../admissions/admission.html">Admissions</a></li>
                     <li>
-                        <label for="btn-3" class="show">Academics +</label>
-                        <a href="#">Academics</a>
-                        <input type="checkbox" id="btn-3" />
+                        <label for="btn-4" class="show">Departments+</label>
+                        <a href="../Departments/Main/Department.html">Departments <span class="fa fa-plus"></span></a>
+                        <input type="checkbox" id="btn-4" />
                         <ul>
-                            <li><a href="../academic/academic.html">Information</a></li>
-                            <li><a href="../admissions/admission.html">Admissions</a></li>
-                            <li>
-                                <label for="btn-4" class="show">Departments+</label>
-                                <a href="../Departments/Main/Department.html">Departments <span class="fa fa-plus"></span></a>
-                                <input type="checkbox" id="btn-4" />
-                                <ul>
-                                    <li><a href="../Departments/subdepartments/Mathematics/Mathematics.html">Mathematics</a></li>
-                                    <li><a href="../Departments/subdepartments/Languages/Languages.html">Languages</a></li>
-                                    <li><a href="../Departments/subdepartments/Sciences/Sciences.html">Sciences</a></li>
-                                    <li><a href="../Departments/subdepartments/Humanities/Humanities.html">Humanities</a></li>
-                                    <li><a href="../Departments/subdepartments/Technicals/Technicals.html">Technicals</a></li>
-                                    <li><a href="../Departments/BOARDING/Boarding.html">Boarding</a></li>
-                                </ul>
-                            </li>
+                            <li><a href="../Departments/subdepartments/Mathematics/Mathematics.html">Mathematics</a></li>
+                            <li><a href="../Departments/subdepartments/Languages/Languages.html">Languages</a></li>
+                            <li><a href="../Departments/subdepartments/Sciences/Sciences.html">Sciences</a></li>
+                            <li><a href="../Departments/subdepartments/Humanities/Humanities.html">Humanities</a></li>
+                            <li><a href="../Departments/subdepartments/Technicals/Technicals.html">Technicals</a></li>
+                            <li><a href="../Departments/BOARDING/Boarding.html">Boarding</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <label for="btn-5" class="show">Co-Curriculum +</label>
-                        <a href="#">Co-Curriculum</a>
-                        <input type="checkbox" id="btn-5" />
-                        <ul>
-                            <li><a href="../sports/sports.html">Sports</a></li>
-                            <li><a href="../clubs-societies/clubs.html">Clubs & Societies</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="../alumni/alumni.html">Alumni</a></li>
-                    <li><a href="../news/news.html">News & Events</a></li>
-                    <li><a href="../contact us/index.html">Contact Us</a></li>
-            </nav>
-        </div>
-    </header>
+                </ul>
+            </li>
+            <li>
+                <label for="btn-5" class="show">Co-Curriculum +</label>
+                <a href="#">Co-Curriculum</a>
+                <input type="checkbox" id="btn-5" />
+                <ul>
+                    <li><a href="../sports/sports.html">Sports</a></li>
+                    <li><a href="../clubs-societies/clubs.html">Clubs & Societies</a></li>
+                </ul>
+            </li>
+            <li><a href="../alumni/alumni.html">Alumni</a></li>
+            <li><a href="../news/news.html">News & Events</a></li>
+            <li><a href="../contact us/index.html">Contact Us</a></li>
+    </nav>
 
 
     <main>
