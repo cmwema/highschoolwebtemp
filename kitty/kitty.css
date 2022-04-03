@@ -40,6 +40,10 @@ main {
     grid-row: 1;
     grid-column: 1 / span end;
 }
+.kitty-container .box1, .box3{
+    font-size: 2.5em;
+    text-align: center;
+}
 
 .kitty-container .box2 {
     display: grid;
@@ -49,6 +53,10 @@ main {
     grid-row: 2;
     grid-column: 1 / span end;
     
+}
+.kitty-container .box2 li{
+    margin-left: 30px;
+    margin-top: 10px;
 }
 
 .kitty-container .box2-1 {
@@ -61,8 +69,8 @@ main {
     grid-column: 1;
 }
 
-.kitty-container .box2-1 h3{
-    margin-left: 30px;
+.kitty-container .box2 h3{
+    margin-left: 50px;
 }
 .kitty-container .box2-3 {
     grid-row: 1 / span 2;
@@ -73,6 +81,12 @@ main {
     width: 50px;
     height: 50px;
     display: inline-block;
+}
+.kitty-container .box2-3 span {
+    font-size: 1.5em;
+}
+.kitty-container .box2-3 h3 {
+    text-align: center;
 }
 
 #address {
