@@ -16,7 +16,7 @@ Also this project helped us learn more on how to work as a team using github.
 - Responsiveness
 
 ### Future features to implement 
-- Full responviness
+- Full responsiveness
 - Better UI/UX
 - Use sass
 
